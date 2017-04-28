@@ -1,0 +1,438 @@
+{
+  "app/box.js": {
+    "description": "",
+    "methods": [],
+    "props": {
+      "icon": {
+        "type": {
+          "name": "object"
+        },
+        "required": true,
+        "description": ""
+      },
+      "onClick": {
+        "type": {
+          "name": "func"
+        },
+        "required": true,
+        "description": ""
+      }
+    }
+  },
+  "app/boxes.js": {
+    "description": "",
+    "methods": [
+      {
+        "name": "getIcons",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "jobs",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "showOverlay",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "jobs",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ],
+    "props": {
+      "jobs": {
+        "type": {
+          "name": "array"
+        },
+        "required": true,
+        "description": ""
+      },
+      "filter": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": ""
+      },
+      "onClickBox": {
+        "type": {
+          "name": "func"
+        },
+        "required": true,
+        "description": ""
+      }
+    }
+  },
+  "app/footer.js": {
+    "description": "",
+    "methods": []
+  },
+  "app/header.js": {
+    "description": "",
+    "methods": []
+  },
+  "app/job.js": {
+    "description": "",
+    "methods": [],
+    "props": {
+      "job": {
+        "type": {
+          "name": "object"
+        },
+        "required": true,
+        "description": ""
+      },
+      "search": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      }
+    }
+  },
+  "app/jobs.js": {
+    "description": "",
+    "methods": [
+      {
+        "name": "handleToggle",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "display",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ],
+    "props": {
+      "jobs": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": ""
+      },
+      "search": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      }
+    }
+  },
+  "app/main.js": {
+    "description": "",
+    "methods": [
+      {
+        "name": "jobMatch",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "job",
+            "type": null
+          },
+          {
+            "name": "filter",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "updateFilteredJobs",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "filter",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "getSkills",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "jobs",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "handleSearch",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "filter",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "handleToggleDisplay",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "activeDisplay",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "handleClickSkill",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "filter",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "handleClickBox",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "jobs",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "showOverlay",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "jobs",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "closeOverlay",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      }
+    ]
+  },
+  "app/overlay.js": {
+    "description": "",
+    "methods": [
+      {
+        "name": "handleClose",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      }
+    ],
+    "props": {
+      "icon": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": ""
+      },
+      "isActive": {
+        "type": {
+          "name": "bool"
+        },
+        "required": true,
+        "description": ""
+      },
+      "closeOverlay": {
+        "type": {
+          "name": "func"
+        },
+        "required": true,
+        "description": ""
+      },
+      "jobs": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": ""
+      }
+    }
+  },
+  "app/searchable.js": {
+    "description": "",
+    "methods": [
+      {
+        "name": "highlight",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "text",
+            "type": null
+          },
+          {
+            "name": "search",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ],
+    "props": {
+      "text": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": ""
+      },
+      "search": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      }
+    }
+  },
+  "app/searchbar.js": {
+    "description": "",
+    "methods": [
+      {
+        "name": "handleChange",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      }
+    ],
+    "props": {
+      "onUserInput": {
+        "type": {
+          "name": "func"
+        },
+        "required": true,
+        "description": ""
+      },
+      "filterText": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": ""
+      }
+    }
+  },
+  "app/skills.js": {
+    "description": "",
+    "methods": [
+      {
+        "name": "handleClickSkill",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "skill",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ],
+    "props": {
+      "skills": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": ""
+      },
+      "search": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "onClickSkill": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
+      }
+    }
+  },
+  "app/socialIcons.js": {
+    "description": "",
+    "methods": []
+  },
+  "app/toggleDisplay.js": {
+    "description": "",
+    "methods": [
+      {
+        "name": "handleToggle",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "display",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "getToggles",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      }
+    ],
+    "props": {
+      "onToggle": {
+        "type": {
+          "name": "func"
+        },
+        "required": true,
+        "description": ""
+      },
+      "activeDisplay": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": ""
+      }
+    }
+  }
+}
