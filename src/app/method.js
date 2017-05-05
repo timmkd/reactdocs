@@ -31,7 +31,7 @@ export class Method extends Component {
   render() {
     return (
       <div>
-        <h4>{this.props.method.name}()</h4>
+        <h4>{this.props.method.name}( )</h4>
         <h5>Params</h5>
         {this.getParams()}
         <dl className="dl-props">

@@ -1,438 +1,5206 @@
-{
-  "app/box.js": {
-    "description": "",
-    "methods": [],
-    "props": {
-      "icon": {
-        "type": {
-          "name": "object"
-        },
-        "required": true,
-        "description": ""
-      },
-      "onClick": {
-        "type": {
-          "name": "func"
-        },
-        "required": true,
-        "description": ""
-      }
-    }
-  },
-  "app/boxes.js": {
-    "description": "",
-    "methods": [
+[
+  {
+    "path": "src/components/AccountListItem/AccountListItem.js",
+    "name": "AccountListItem",
+    "docs": [
       {
-        "name": "getIcons",
-        "docblock": null,
-        "modifiers": [],
-        "params": [
+        "description": "",
+        "methods": [
           {
-            "name": "jobs",
-            "type": null
+            "name": "handleOnClick",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "id",
+                "type": null
+              }
+            ],
+            "returns": null
           }
         ],
-        "returns": null
-      },
-      {
-        "name": "showOverlay",
-        "docblock": null,
-        "modifiers": [],
-        "params": [
-          {
-            "name": "jobs",
-            "type": null
-          }
-        ],
-        "returns": null
-      }
-    ],
-    "props": {
-      "jobs": {
-        "type": {
-          "name": "array"
-        },
-        "required": true,
-        "description": ""
-      },
-      "filter": {
-        "type": {
-          "name": "string"
-        },
-        "required": true,
-        "description": ""
-      },
-      "onClickBox": {
-        "type": {
-          "name": "func"
-        },
-        "required": true,
-        "description": ""
-      }
-    }
-  },
-  "app/footer.js": {
-    "description": "",
-    "methods": []
-  },
-  "app/header.js": {
-    "description": "",
-    "methods": []
-  },
-  "app/job.js": {
-    "description": "",
-    "methods": [],
-    "props": {
-      "job": {
-        "type": {
-          "name": "object"
-        },
-        "required": true,
-        "description": ""
-      },
-      "search": {
-        "type": {
-          "name": "string"
-        },
-        "required": false,
-        "description": ""
-      }
-    }
-  },
-  "app/jobs.js": {
-    "description": "",
-    "methods": [
-      {
-        "name": "handleToggle",
-        "docblock": null,
-        "modifiers": [],
-        "params": [
-          {
-            "name": "display",
-            "type": null
-          }
-        ],
-        "returns": null
-      }
-    ],
-    "props": {
-      "jobs": {
-        "type": {
-          "name": "array"
-        },
-        "required": false,
-        "description": ""
-      },
-      "search": {
-        "type": {
-          "name": "string"
-        },
-        "required": false,
-        "description": ""
-      }
-    }
-  },
-  "app/main.js": {
-    "description": "",
-    "methods": [
-      {
-        "name": "jobMatch",
-        "docblock": null,
-        "modifiers": [],
-        "params": [
-          {
-            "name": "job",
-            "type": null
+        "props": {
+          "name": {
+            "type": {
+              "name": "string"
+            },
+            "required": true,
+            "description": ""
           },
-          {
-            "name": "filter",
-            "type": null
+          "logo": {
+            "type": {
+              "name": "string"
+            },
+            "required": true,
+            "description": ""
+          },
+          "score": {
+            "type": {
+              "name": "number"
+            },
+            "required": false,
+            "description": ""
+          },
+          "id": {
+            "type": {
+              "name": "string"
+            },
+            "required": true,
+            "description": ""
+          },
+          "onClick": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
           }
-        ],
-        "returns": null
-      },
-      {
-        "name": "updateFilteredJobs",
-        "docblock": null,
-        "modifiers": [],
-        "params": [
-          {
-            "name": "filter",
-            "type": null
-          }
-        ],
-        "returns": null
-      },
-      {
-        "name": "getSkills",
-        "docblock": null,
-        "modifiers": [],
-        "params": [
-          {
-            "name": "jobs",
-            "type": null
-          }
-        ],
-        "returns": null
-      },
-      {
-        "name": "handleSearch",
-        "docblock": null,
-        "modifiers": [],
-        "params": [
-          {
-            "name": "filter",
-            "type": null
-          }
-        ],
-        "returns": null
-      },
-      {
-        "name": "handleToggleDisplay",
-        "docblock": null,
-        "modifiers": [],
-        "params": [
-          {
-            "name": "activeDisplay",
-            "type": null
-          }
-        ],
-        "returns": null
-      },
-      {
-        "name": "handleClickSkill",
-        "docblock": null,
-        "modifiers": [],
-        "params": [
-          {
-            "name": "filter",
-            "type": null
-          }
-        ],
-        "returns": null
-      },
-      {
-        "name": "handleClickBox",
-        "docblock": null,
-        "modifiers": [],
-        "params": [
-          {
-            "name": "jobs",
-            "type": null
-          }
-        ],
-        "returns": null
-      },
-      {
-        "name": "showOverlay",
-        "docblock": null,
-        "modifiers": [],
-        "params": [
-          {
-            "name": "jobs",
-            "type": null
-          }
-        ],
-        "returns": null
-      },
-      {
-        "name": "closeOverlay",
-        "docblock": null,
-        "modifiers": [],
-        "params": [],
-        "returns": null
+        }
       }
     ]
   },
-  "app/overlay.js": {
-    "description": "",
-    "methods": [
+  {
+    "path": "src/components/ActionMenu/ActionMenu.js",
+    "name": "ActionMenu",
+    "docs": [
       {
-        "name": "handleClose",
-        "docblock": null,
-        "modifiers": [],
-        "params": [],
-        "returns": null
-      }
-    ],
-    "props": {
-      "icon": {
-        "type": {
-          "name": "object"
-        },
-        "required": false,
-        "description": ""
-      },
-      "isActive": {
-        "type": {
-          "name": "bool"
-        },
-        "required": true,
-        "description": ""
-      },
-      "closeOverlay": {
-        "type": {
-          "name": "func"
-        },
-        "required": true,
-        "description": ""
-      },
-      "jobs": {
-        "type": {
-          "name": "array"
-        },
-        "required": false,
-        "description": ""
-      }
-    }
-  },
-  "app/searchable.js": {
-    "description": "",
-    "methods": [
-      {
-        "name": "highlight",
-        "docblock": null,
-        "modifiers": [],
-        "params": [
+        "description": "",
+        "methods": [
           {
-            "name": "text",
-            "type": null
+            "name": "onSelect",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "value",
+                "type": null
+              }
+            ],
+            "returns": null
+          }
+        ],
+        "props": {
+          "menuItems": {
+            "type": {
+              "name": "array"
+            },
+            "required": false,
+            "description": ""
+          },
+          "iconMenuItems": {
+            "type": {
+              "name": "array"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onMenuSelected": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "position": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/AppBar/AppBar.js",
+    "name": "AppBar",
+    "docs": [
+      {
+        "description": "",
+        "methods": [
+          {
+            "name": "getParam",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "key",
+                "type": null
+              }
+            ],
+            "returns": null
           },
           {
-            "name": "search",
-            "type": null
-          }
-        ],
-        "returns": null
-      }
-    ],
-    "props": {
-      "text": {
-        "type": {
-          "name": "string"
-        },
-        "required": true,
-        "description": ""
-      },
-      "search": {
-        "type": {
-          "name": "string"
-        },
-        "required": false,
-        "description": ""
-      }
-    }
-  },
-  "app/searchbar.js": {
-    "description": "",
-    "methods": [
-      {
-        "name": "handleChange",
-        "docblock": null,
-        "modifiers": [],
-        "params": [],
-        "returns": null
-      }
-    ],
-    "props": {
-      "onUserInput": {
-        "type": {
-          "name": "func"
-        },
-        "required": true,
-        "description": ""
-      },
-      "filterText": {
-        "type": {
-          "name": "string"
-        },
-        "required": true,
-        "description": ""
-      }
-    }
-  },
-  "app/skills.js": {
-    "description": "",
-    "methods": [
-      {
-        "name": "handleClickSkill",
-        "docblock": null,
-        "modifiers": [],
-        "params": [
+            "name": "shortenTitle",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "title",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
           {
-            "name": "skill",
-            "type": null
+            "name": "buildTitle",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
           }
         ],
-        "returns": null
+        "props": {
+          "routes": {
+            "type": {
+              "name": "array"
+            },
+            "required": true,
+            "description": ""
+          },
+          "pushRoute": {
+            "type": {
+              "name": "func"
+            },
+            "required": true,
+            "description": ""
+          },
+          "tabMenu": {
+            "type": {
+              "name": "object"
+            },
+            "required": false,
+            "description": ""
+          },
+          "routeParams": {
+            "type": {
+              "name": "object"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onMenuItemClicked": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onSearchButtonClicked": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "searchActive": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "mediaQuery": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "queryStrings": {
+            "type": {
+              "name": "object"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
       }
-    ],
-    "props": {
-      "skills": {
-        "type": {
-          "name": "array"
-        },
-        "required": false,
-        "description": ""
-      },
-      "search": {
-        "type": {
-          "name": "string"
-        },
-        "required": false,
-        "description": ""
-      },
-      "onClickSkill": {
-        "type": {
-          "name": "func"
-        },
-        "required": false,
-        "description": ""
-      }
-    }
+    ]
   },
-  "app/socialIcons.js": {
-    "description": "",
-    "methods": []
-  },
-  "app/toggleDisplay.js": {
-    "description": "",
-    "methods": [
+  {
+    "path": "src/components/AppMessage/AppMessage.js",
+    "name": "AppMessage",
+    "docs": [
       {
-        "name": "handleToggle",
-        "docblock": null,
-        "modifiers": [],
-        "params": [
+        "description": "",
+        "methods": [
           {
-            "name": "display",
-            "type": null
+            "name": "handleClose",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "handleTimeout",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
           }
         ],
-        "returns": null
-      },
+        "props": {
+          "type": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "message": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "active": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "false",
+              "computed": false
+            }
+          },
+          "timeout": {
+            "type": {
+              "name": "number"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "3000",
+              "computed": false
+            }
+          },
+          "onClose": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/AppMessage/AppMessageDemo.js",
+    "name": "AppMessageDemo",
+    "docs": [
       {
-        "name": "getToggles",
-        "docblock": null,
-        "modifiers": [],
-        "params": [],
-        "returns": null
+        "description": "",
+        "methods": [],
+        "props": {
+          "onClick": {
+            "type": {
+              "name": "func"
+            },
+            "required": true,
+            "description": ""
+          }
+        }
       }
-    ],
-    "props": {
-      "onToggle": {
-        "type": {
-          "name": "func"
-        },
-        "required": true,
-        "description": ""
-      },
-      "activeDisplay": {
-        "type": {
-          "name": "string"
-        },
-        "required": true,
-        "description": ""
+    ]
+  },
+  {
+    "path": "src/components/ButtonBar/ButtonBar.js",
+    "name": "ButtonBar",
+    "docs": [
+      {
+        "description": "",
+        "methods": [],
+        "props": {
+          "actions": {
+            "type": {
+              "name": "arrayOf",
+              "value": {
+                "name": "shape",
+                "value": {
+                  "label": {
+                    "name": "string",
+                    "required": true
+                  },
+                  "onClick": {
+                    "name": "func",
+                    "required": true
+                  }
+                }
+              }
+            },
+            "required": false,
+            "description": ""
+          },
+          "onCancel": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
       }
-    }
+    ]
+  },
+  {
+    "path": "src/components/Cards/AccountCard.js",
+    "name": "AccountCard",
+    "docs": [
+      {
+        "description": "",
+        "methods": [],
+        "props": {
+          "account": {
+            "type": {
+              "name": "object"
+            },
+            "required": true,
+            "description": ""
+          },
+          "mediaQuery": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onEnterAccount": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/Cards/AlertCard.js",
+    "name": "AlertCard",
+    "docs": [
+      {
+        "description": "",
+        "methods": [
+          {
+            "name": "createMenu",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "actions",
+                "type": null
+              }
+            ],
+            "returns": null
+          }
+        ],
+        "props": {
+          "alert": {
+            "type": {
+              "name": "object"
+            },
+            "required": true,
+            "description": ""
+          },
+          "onEnter": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onSelected": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "actions": {
+            "type": {
+              "name": "array"
+            },
+            "required": false,
+            "description": ""
+          },
+          "mediaQuery": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/Cards/ExecCard.js",
+    "name": "ExecCard",
+    "docs": [
+      {
+        "description": "",
+        "methods": [],
+        "props": {
+          "exec": {
+            "type": {
+              "name": "object"
+            },
+            "required": true,
+            "description": ""
+          },
+          "mediaQuery": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onEnterExec": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/Cards/SectorCard.js",
+    "name": "SectorCard",
+    "docs": [
+      {
+        "description": "",
+        "methods": [],
+        "props": {
+          "sector": {
+            "type": {
+              "name": "object"
+            },
+            "required": true,
+            "description": ""
+          },
+          "mediaQuery": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onEnterSector": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/Cards/SmartFilterCard.js",
+    "name": "SmartFilterCard",
+    "docs": [
+      {
+        "description": "",
+        "methods": [
+          {
+            "name": "createMenu",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "actions",
+                "type": null
+              },
+              {
+                "name": "id",
+                "type": null
+              }
+            ],
+            "returns": null
+          }
+        ],
+        "props": {
+          "smartFilter": {
+            "type": {
+              "name": "object"
+            },
+            "required": true,
+            "description": ""
+          },
+          "mediaQuery": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onEnterSmartFilter": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/ChartThumbnail/ChartThumbnail.js",
+    "name": "ChartThumbnail",
+    "docs": [
+      {
+        "description": "",
+        "methods": [],
+        "props": {
+          "data": {
+            "type": {
+              "name": "array"
+            },
+            "required": true,
+            "description": ""
+          },
+          "svgWidth": {
+            "type": {
+              "name": "number"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "70",
+              "computed": false
+            }
+          },
+          "svgHeight": {
+            "type": {
+              "name": "number"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "30",
+              "computed": false
+            }
+          },
+          "margin": {
+            "type": {
+              "name": "number"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "0",
+              "computed": false
+            }
+          },
+          "strokeColor": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "'#747474'",
+              "computed": false
+            }
+          },
+          "strokeFill": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "'#999999'",
+              "computed": false
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/Charts/BarChart.js",
+    "name": "BarChart",
+    "docs": [
+      {
+        "description": "",
+        "methods": [
+          {
+            "name": "drawChart",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "create",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "showTooltip",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "data",
+                "type": null
+              },
+              {
+                "name": "index",
+                "type": null
+              },
+              {
+                "name": "position",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "hideTooltip",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          }
+        ],
+        "props": {
+          "data": {
+            "type": {
+              "name": "array"
+            },
+            "required": true,
+            "description": ""
+          },
+          "width": {
+            "type": {
+              "name": "number"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "400",
+              "computed": false
+            }
+          },
+          "height": {
+            "type": {
+              "name": "number"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "300",
+              "computed": false
+            }
+          },
+          "margin": {
+            "type": {
+              "name": "object"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "{top: 10, left: 40, bottom: 80, right: 10}",
+              "computed": false
+            }
+          },
+          "onBarClick": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onXAxisClick": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "surgePoint": {
+            "type": {
+              "name": "number"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "50",
+              "computed": false
+            }
+          },
+          "showSurgePointLabel": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "showY": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/Charts/ChartPopup.js",
+    "name": "ChartPopup",
+    "docs": [
+      {
+        "description": "",
+        "methods": [],
+        "props": {
+          "children": {
+            "type": {
+              "name": "node"
+            },
+            "required": false,
+            "description": ""
+          },
+          "position": {
+            "type": {
+              "name": "shape",
+              "value": {
+                "bottom": {
+                  "name": "number",
+                  "required": false
+                },
+                "left": {
+                  "name": "number",
+                  "required": false
+                }
+              }
+            },
+            "required": false,
+            "description": ""
+          },
+          "active": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "className": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/Charts/ClusteredBarChart.js",
+    "name": "ClusteredBarChart",
+    "docs": [
+      {
+        "description": "",
+        "methods": [
+          {
+            "name": "onClick",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "data",
+                "type": null
+              },
+              {
+                "name": "seriesIndex",
+                "type": null
+              },
+              {
+                "name": "barIndex",
+                "type": null
+              },
+              {
+                "name": "position",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "onClear",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "getColors",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "clearActive",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "calculateHeight",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "data",
+                "type": null
+              },
+              {
+                "name": "showAverage",
+                "type": null
+              },
+              {
+                "name": "{top=0, bottom=0}",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "drawChart",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "create",
+                "type": null
+              }
+            ],
+            "returns": null
+          }
+        ],
+        "props": {
+          "data": {
+            "type": {
+              "name": "arrayOf",
+              "value": {
+                "name": "shape",
+                "value": {
+                  "id": {
+                    "name": "string",
+                    "required": false
+                  },
+                  "series": {
+                    "name": "string",
+                    "required": false
+                  },
+                  "values": {
+                    "name": "arrayOf",
+                    "value": {
+                      "name": "shape",
+                      "value": {
+                        "id": {
+                          "name": "string",
+                          "required": false
+                        },
+                        "label": {
+                          "name": "string",
+                          "required": false
+                        },
+                        "score": {
+                          "name": "number",
+                          "required": false
+                        }
+                      }
+                    },
+                    "required": false
+                  }
+                }
+              }
+            },
+            "required": true,
+            "description": ""
+          },
+          "surgePoint": {
+            "type": {
+              "name": "number"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "50",
+              "computed": false
+            }
+          },
+          "showAverage": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "width": {
+            "type": {
+              "name": "number"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "400",
+              "computed": false
+            }
+          },
+          "margin": {
+            "type": {
+              "name": "object"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "{top: 10, left: 120, bottom: 30, right: 10}",
+              "computed": false
+            }
+          },
+          "onBarClick": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onYAxisClick": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "showX": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "showY": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/Charts/Label.js",
+    "name": "Label",
+    "docs": [
+      {
+        "description": "",
+        "methods": [],
+        "props": {
+          "label": {
+            "type": {
+              "name": "string"
+            },
+            "required": true,
+            "description": ""
+          },
+          "color": {
+            "type": {
+              "name": "string"
+            },
+            "required": true,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/Charts/Legend.js",
+    "name": "Legend",
+    "docs": [
+      {
+        "description": "",
+        "methods": [
+          {
+            "name": "handleScroll",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "event",
+                "type": null
+              }
+            ],
+            "returns": null
+          }
+        ],
+        "props": {
+          "data": {
+            "type": {
+              "name": "array"
+            },
+            "required": false,
+            "description": ""
+          },
+          "title": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "showSurgePoint": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "className": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "fixOnScrollPos": {
+            "type": {
+              "name": "number"
+            },
+            "required": false,
+            "description": ""
+          },
+          "emptyMessage": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/Charts/LineChart.js",
+    "name": "LineChart",
+    "docs": [
+      {
+        "description": "",
+        "methods": [
+          {
+            "name": "drawChart",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "create",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "showTooltip",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "data",
+                "type": null
+              },
+              {
+                "name": "index",
+                "type": null
+              },
+              {
+                "name": "position",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "hideTooltip",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          }
+        ],
+        "props": {
+          "data": {
+            "type": {
+              "name": "array"
+            },
+            "required": true,
+            "description": ""
+          },
+          "width": {
+            "type": {
+              "name": "number"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "400",
+              "computed": false
+            }
+          },
+          "height": {
+            "type": {
+              "name": "number"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "300",
+              "computed": false
+            }
+          },
+          "margin": {
+            "type": {
+              "name": "object"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "{top: 10, left: 40, bottom: 80, right: 10}",
+              "computed": false
+            }
+          },
+          "onPointClick": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onXAxisClick": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/Charts/MultiLineChart.js",
+    "name": "MultiLineChart",
+    "docs": [
+      {
+        "description": "",
+        "methods": [
+          {
+            "name": "onClick",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "data",
+                "type": null
+              },
+              {
+                "name": "index",
+                "type": null
+              },
+              {
+                "name": "position",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "onClear",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "getColors",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "clearActive",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "drawChart",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "create",
+                "type": null
+              }
+            ],
+            "returns": null
+          }
+        ],
+        "props": {
+          "data": {
+            "type": {
+              "name": "arrayOf",
+              "value": {
+                "name": "shape",
+                "value": {
+                  "series": {
+                    "name": "string",
+                    "required": false
+                  },
+                  "values": {
+                    "name": "arrayOf",
+                    "value": {
+                      "name": "shape",
+                      "value": {
+                        "label": {
+                          "name": "string",
+                          "required": false
+                        },
+                        "score": {
+                          "name": "number",
+                          "required": false
+                        }
+                      }
+                    },
+                    "required": false
+                  }
+                }
+              }
+            },
+            "required": true,
+            "description": ""
+          },
+          "width": {
+            "type": {
+              "name": "number"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "400",
+              "computed": false
+            }
+          },
+          "height": {
+            "type": {
+              "name": "number"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "300",
+              "computed": false
+            }
+          },
+          "margin": {
+            "type": {
+              "name": "object"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "{top: 10, left: 40, bottom: 80, right: 10}",
+              "computed": false
+            }
+          },
+          "surgePoint": {
+            "type": {
+              "name": "number"
+            },
+            "required": false,
+            "description": ""
+          },
+          "showAverage": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onLineClick": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "showX": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "showY": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/Charts/PieChart.js",
+    "name": "PieChart",
+    "docs": [
+      {
+        "description": "",
+        "methods": [
+          {
+            "name": "getColors",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "drawChart",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "create",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "calculatePercentages",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "data",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "hideTooltip",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "showTooltip",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "data",
+                "type": null
+              },
+              {
+                "name": "index",
+                "type": null
+              },
+              {
+                "name": "position",
+                "type": null
+              }
+            ],
+            "returns": null
+          }
+        ],
+        "props": {
+          "diameter": {
+            "type": {
+              "name": "number"
+            },
+            "required": true,
+            "description": "",
+            "defaultValue": {
+              "value": "40",
+              "computed": false
+            }
+          },
+          "data": {
+            "type": {
+              "name": "array"
+            },
+            "required": true,
+            "description": ""
+          },
+          "margin": {
+            "type": {
+              "name": "object"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "{top: 10, right: 10, bottom: 10, left: 10}",
+              "computed": false
+            }
+          },
+          "showTooltips": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "true",
+              "computed": false
+            }
+          },
+          "showLegend": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "true",
+              "computed": false
+            }
+          },
+          "showSurgePoint": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/Clamp/Clamp.js",
+    "name": "Clamp",
+    "docs": [
+      {
+        "description": "",
+        "methods": [
+          {
+            "name": "clampContainer",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "handleResize",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          }
+        ],
+        "props": {
+          "lines": {
+            "type": {
+              "name": "number"
+            },
+            "required": true,
+            "description": ""
+          },
+          "lineHeight": {
+            "type": {
+              "name": "string"
+            },
+            "required": true,
+            "description": ""
+          },
+          "ellipsis": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "'\\u2026'",
+              "computed": false
+            }
+          },
+          "children": {
+            "type": {
+              "name": "node"
+            },
+            "required": false,
+            "description": ""
+          },
+          "updateOnResize": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "true",
+              "computed": false
+            }
+          },
+          "className": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/DateRangePicker/DateRangePicker.js",
+    "name": "DateRangePicker",
+    "docs": [
+      {
+        "description": "",
+        "methods": [
+          {
+            "name": "handleChange",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "item",
+                "type": null
+              },
+              {
+                "name": "value",
+                "type": null
+              }
+            ],
+            "returns": null
+          }
+        ],
+        "props": {
+          "dateRange": {
+            "type": {
+              "name": "shape",
+              "value": {
+                "dateFrom": {
+                  "name": "instanceOf",
+                  "value": "Date",
+                  "required": false
+                },
+                "dateTo": {
+                  "name": "instanceOf",
+                  "value": "Date",
+                  "required": false
+                }
+              }
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "{\n  dateFrom: moment().subtract(90, 'days').toDate(),\n  dateTo: moment().toDate()\n}",
+              "computed": false
+            }
+          },
+          "minDate": {
+            "type": {
+              "name": "instanceOf",
+              "value": "Date"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "moment().subtract(91, 'days').toDate()",
+              "computed": true
+            }
+          },
+          "maxDate": {
+            "type": {
+              "name": "instanceOf",
+              "value": "Date"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "moment().toDate()",
+              "computed": true
+            }
+          },
+          "onChange": {
+            "type": {
+              "name": "func"
+            },
+            "required": true,
+            "description": ""
+          },
+          "enabledDates": {
+            "type": {
+              "name": "shape",
+              "value": {
+                "enabledDateFrom": {
+                  "name": "array",
+                  "required": false
+                },
+                "enabledDateTo": {
+                  "name": "array",
+                  "required": false
+                }
+              }
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/DropDown/DropDown.js",
+    "name": "DropDown",
+    "docs": [
+      {
+        "description": "",
+        "methods": [
+          {
+            "name": "onChange",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "value",
+                "type": null
+              }
+            ],
+            "returns": null
+          }
+        ],
+        "props": {
+          "value": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "defaultValue": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "className": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "label": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "listItems": {
+            "type": {
+              "name": "arrayOf",
+              "value": {
+                "name": "shape",
+                "value": {
+                  "value": {
+                    "name": "string",
+                    "required": false
+                  },
+                  "label": {
+                    "name": "string",
+                    "required": false
+                  }
+                }
+              }
+            },
+            "required": false,
+            "description": ""
+          },
+          "allowBlank": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onChange": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "error": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/Entity Components/EntityChip/EntityChip.js",
+    "name": "EntityChip",
+    "docs": [
+      {
+        "description": "",
+        "methods": [],
+        "props": {
+          "onClick": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onDelete": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "entity": {
+            "type": {
+              "name": "shape",
+              "value": {
+                "entityType": {
+                  "name": "string",
+                  "required": false
+                },
+                "iconEntityType": {
+                  "name": "string",
+                  "required": false
+                },
+                "id": {
+                  "name": "string",
+                  "required": false
+                },
+                "name": {
+                  "name": "string",
+                  "required": false
+                },
+                "iconImage": {
+                  "name": "string",
+                  "required": false
+                },
+                "iconName": {
+                  "name": "string",
+                  "required": false
+                },
+                "iconColor": {
+                  "name": "string",
+                  "required": false
+                },
+                "iconForeColor": {
+                  "name": "string",
+                  "required": false
+                },
+                "iconType": {
+                  "name": "string",
+                  "required": false
+                },
+                "jobTitle": {
+                  "name": "string",
+                  "required": false
+                },
+                "accountName": {
+                  "name": "string",
+                  "required": false
+                }
+              }
+            },
+            "required": false,
+            "description": ""
+          },
+          "showTooltip": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "tooltipPrefix": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/Entity Components/EntityIcon/EntityIcon.js",
+    "name": "EntityIcon",
+    "docs": [
+      {
+        "description": "",
+        "methods": [
+          {
+            "name": "getIcon",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          }
+        ],
+        "props": {
+          "entityType": {
+            "type": {
+              "name": "string"
+            },
+            "required": true,
+            "description": ""
+          },
+          "iconDetails": {
+            "type": {
+              "name": "shape",
+              "value": {
+                "iconImage": {
+                  "name": "string",
+                  "required": false
+                },
+                "iconName": {
+                  "name": "string",
+                  "required": false
+                },
+                "iconColor": {
+                  "name": "string",
+                  "required": false
+                },
+                "iconForeColor": {
+                  "name": "string",
+                  "required": false
+                },
+                "iconType": {
+                  "name": "string",
+                  "required": false
+                }
+              }
+            },
+            "required": false,
+            "description": ""
+          },
+          "className": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/FAIcon/FAIcon.js",
+    "name": "FAIcon",
+    "docs": [
+      {
+        "description": "",
+        "methods": [],
+        "props": {
+          "icon": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "iconType": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/Favourite/Favourite.js",
+    "name": "Favourite",
+    "docs": [
+      {
+        "description": "",
+        "methods": [],
+        "props": {
+          "isFavourite": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onToggle": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/Favourite/SearchFavourite.js",
+    "name": "SearchFavourite",
+    "docs": [
+      {
+        "description": "",
+        "methods": [],
+        "props": {
+          "selected": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onToggle": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/FilterDropDown/FilterDropDown.js",
+    "name": "FilterDropDown",
+    "docs": [
+      {
+        "description": "",
+        "methods": [
+          {
+            "name": "handleChange",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "value",
+                "type": null
+              }
+            ],
+            "returns": null
+          }
+        ],
+        "props": {
+          "value": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "allValue": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "'ALL'",
+              "computed": false
+            }
+          },
+          "label": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "floating": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "true",
+              "computed": false
+            }
+          },
+          "multiple": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "false",
+              "computed": false
+            }
+          },
+          "listItems": {
+            "type": {
+              "name": "union",
+              "value": [
+                {
+                  "name": "array"
+                },
+                {
+                  "name": "object"
+                }
+              ]
+            },
+            "required": false,
+            "description": ""
+          },
+          "loading": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onChange": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/FloatingActionButton/FloatingActionButton.js",
+    "name": "FloatingActionButton",
+    "docs": [
+      {
+        "description": "",
+        "methods": [
+          {
+            "name": "onClick",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "value",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "switchMenu",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          }
+        ],
+        "props": {
+          "icon": {
+            "type": {
+              "name": "string"
+            },
+            "required": true,
+            "description": ""
+          },
+          "onClick": {
+            "type": {
+              "name": "func"
+            },
+            "required": true,
+            "description": ""
+          },
+          "disabled": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "className": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "menuOptions": {
+            "type": {
+              "name": "array"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/FormControls/TextBox.js",
+    "name": "TextBox",
+    "docs": [
+      {
+        "description": "",
+        "methods": [
+          {
+            "name": "getValue",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "clear",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "handleChange",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "value",
+                "type": null
+              }
+            ],
+            "returns": null
+          }
+        ],
+        "props": {
+          "initialText": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "inputProps": {
+            "type": {
+              "name": "shape",
+              "value": {
+                "label": {
+                  "name": "string",
+                  "required": false
+                },
+                "hint": {
+                  "name": "string",
+                  "required": false
+                },
+                "maxLength": {
+                  "name": "number",
+                  "required": false
+                },
+                "icon": {
+                  "name": "string",
+                  "required": false
+                },
+                "multiline": {
+                  "name": "bool",
+                  "required": false
+                }
+              }
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "{\n  multiline: false\n}",
+              "computed": false
+            }
+          },
+          "disabled": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "false",
+              "computed": false
+            }
+          },
+          "error": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onChange": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/List/List.js",
+    "name": "List",
+    "docs": [
+      {
+        "description": "",
+        "methods": [
+          {
+            "name": "handleClick",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "id",
+                "type": null
+              }
+            ],
+            "returns": null
+          }
+        ],
+        "props": {
+          "items": {
+            "type": {
+              "name": "array"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onClick": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/List/ListItem.js",
+    "name": "ListItem",
+    "docs": [
+      {
+        "description": "",
+        "methods": [
+          {
+            "name": "onClick",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          }
+        ],
+        "props": {
+          "imageUrl": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "icon": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "iconColor": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "title": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "subtitle": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onClick": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/Loading/LoadingLinear/LoadingLinear.js",
+    "name": "LoadingLinear",
+    "docs": [
+      {
+        "description": "",
+        "methods": [],
+        "props": {
+          "progress": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/Loading/LoadingSpinner/LoadingSpinner.js",
+    "name": "LoadingSpinner",
+    "docs": [
+      {
+        "description": "",
+        "methods": [],
+        "props": {
+          "customStyles": {
+            "type": {
+              "name": "object"
+            },
+            "required": false,
+            "description": ""
+          },
+          "loadMessage": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "spinnerSize": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "spinnerType": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/MainLayout/MainLayout.js",
+    "name": "MainLayout",
+    "docs": [
+      {
+        "description": "",
+        "methods": [],
+        "props": {
+          "routes": {
+            "type": {
+              "name": "array"
+            },
+            "required": true,
+            "description": ""
+          },
+          "location": {
+            "type": {
+              "name": "object"
+            },
+            "required": true,
+            "description": ""
+          },
+          "currentRoute": {
+            "type": {
+              "name": "object"
+            },
+            "required": true,
+            "description": ""
+          },
+          "pushRoute": {
+            "type": {
+              "name": "func"
+            },
+            "required": true,
+            "description": ""
+          },
+          "children": {
+            "type": {
+              "name": "node"
+            },
+            "required": false,
+            "description": ""
+          },
+          "tabMenu": {
+            "type": {
+              "name": "object"
+            },
+            "required": false,
+            "description": ""
+          },
+          "routeParams": {
+            "type": {
+              "name": "object"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onToggleMenu": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onToggleSearch": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "menuActive": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "searchActive": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "mediaQuery": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "menuItems": {
+            "type": {
+              "name": "array"
+            },
+            "required": false,
+            "description": ""
+          },
+          "queryStrings": {
+            "type": {
+              "name": "object"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/MainNav/MainNav.js",
+    "name": "MainNav",
+    "docs": [
+      {
+        "description": "",
+        "methods": [
+          {
+            "name": "getActiveRoute",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "menuItemClicked",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "item",
+                "type": null
+              }
+            ],
+            "returns": null
+          }
+        ],
+        "props": {
+          "pathname": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "pushRoute": {
+            "type": {
+              "name": "func"
+            },
+            "required": true,
+            "description": ""
+          },
+          "currentRoute": {
+            "type": {
+              "name": "object"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onMenuItemClicked": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "items": {
+            "type": {
+              "name": "arrayOf",
+              "value": {
+                "name": "shape",
+                "value": {
+                  "route": {
+                    "name": "string",
+                    "required": false
+                  },
+                  "queryString": {
+                    "name": "string",
+                    "required": false
+                  },
+                  "label": {
+                    "name": "string",
+                    "required": false
+                  },
+                  "icon": {
+                    "name": "string",
+                    "required": false
+                  }
+                }
+              }
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/MainNav/MainNavLink.js",
+    "name": "MainNavLink",
+    "docs": [
+      {
+        "description": "",
+        "methods": [],
+        "props": {
+          "isActive": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "label": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "icon": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onClick": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/MenuTab/MenuTab.js",
+    "name": "MenuTab",
+    "docs": [
+      {
+        "description": "",
+        "methods": [],
+        "props": {
+          "tabs": {
+            "type": {
+              "name": "array"
+            },
+            "required": false,
+            "description": ""
+          },
+          "tabIndex": {
+            "type": {
+              "name": "number"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onChange": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/NavHeader/NavHeader.js",
+    "name": "NavHeader",
+    "docs": [
+      {
+        "description": "",
+        "methods": []
+      }
+    ]
+  },
+  {
+    "path": "src/components/News/Article.js",
+    "name": "Article",
+    "docs": [
+      {
+        "description": "",
+        "methods": [],
+        "props": {
+          "customActions": {
+            "type": {
+              "name": "array"
+            },
+            "required": false,
+            "description": ""
+          },
+          "date": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "description": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "id": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "image": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "isParent": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "lists": {
+            "type": {
+              "name": "object"
+            },
+            "required": false,
+            "description": ""
+          },
+          "newsType": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "origin": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "parentId": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "showActions": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "showDescription": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "showDetails": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "tags": {
+            "type": {
+              "name": "array"
+            },
+            "required": false,
+            "description": ""
+          },
+          "title": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "url": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/News/NewsDate.js",
+    "name": "NewsDate",
+    "docs": [
+      {
+        "description": "",
+        "methods": [],
+        "props": {
+          "date": {
+            "type": {
+              "name": "string"
+            },
+            "required": true,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/News/NewsDetails.js",
+    "name": "NewsDetails",
+    "docs": [
+      {
+        "description": "",
+        "methods": [
+          {
+            "name": "tabChange",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "i",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "handleActionClick",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "route",
+                "type": null
+              }
+            ],
+            "returns": null
+          }
+        ],
+        "props": {
+          "newsData": {
+            "type": {
+              "name": "object"
+            },
+            "required": true,
+            "description": ""
+          },
+          "actionButtons": {
+            "type": {
+              "name": "array"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onActionClick": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onChangeTab": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/News/SimpleNewsList.js",
+    "name": "SimpleNewsList",
+    "docs": [
+      {
+        "description": "",
+        "methods": [],
+        "props": {
+          "maxArticles": {
+            "type": {
+              "name": "number"
+            },
+            "required": false,
+            "description": ""
+          },
+          "news": {
+            "type": {
+              "name": "object"
+            },
+            "required": false,
+            "description": ""
+          },
+          "showDescription": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "showChildArticles": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onViewMoreClicked": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/PageHeader/PageHeader.js",
+    "name": "PageHeader",
+    "docs": [
+      {
+        "description": "",
+        "methods": [],
+        "props": {
+          "id": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "title": {
+            "type": {
+              "name": "node"
+            },
+            "required": false,
+            "description": ""
+          },
+          "subtitle": {
+            "type": {
+              "name": "node"
+            },
+            "required": false,
+            "description": ""
+          },
+          "imageUrl": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "iconName": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "iconColor": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "execTwitterUrl": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "execLinkedinUrl": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "type": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "hideJumpTo": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "hideAction": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "hideFavourite": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "actions": {
+            "type": {
+              "name": "union",
+              "value": [
+                {
+                  "name": "array"
+                },
+                {
+                  "name": "object"
+                }
+              ]
+            },
+            "required": false,
+            "description": ""
+          },
+          "onActionMenuClicked": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/ParagraphText/ParagraphText.js",
+    "name": "ParagraphText",
+    "docs": [
+      {
+        "description": "",
+        "methods": [],
+        "props": {
+          "text": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "className": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/Popups/AddToSmartFilterPopup.js",
+    "name": "AddToSmartFilterPopup",
+    "docs": [
+      {
+        "description": "",
+        "methods": [
+          {
+            "name": "handleCancel",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "handleAdd",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "handleSmartFilterClick",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "value",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "handleNewClicked",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "value",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "handleTextChanged",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          }
+        ],
+        "props": {
+          "active": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "smartFilters": {
+            "type": {
+              "name": "array"
+            },
+            "required": false,
+            "description": ""
+          },
+          "form": {
+            "type": {
+              "name": "object"
+            },
+            "required": false,
+            "description": ""
+          },
+          "errors": {
+            "type": {
+              "name": "shape",
+              "value": {
+                "new_smartFilter": {
+                  "name": "string",
+                  "required": false
+                }
+              }
+            },
+            "required": false,
+            "description": ""
+          },
+          "onUpdateForm": {
+            "type": {
+              "name": "func"
+            },
+            "required": true,
+            "description": ""
+          },
+          "onCancel": {
+            "type": {
+              "name": "func"
+            },
+            "required": true,
+            "description": ""
+          },
+          "onAdd": {
+            "type": {
+              "name": "func"
+            },
+            "required": true,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/Popups/ArticleDetailsPopup.js",
+    "name": "ArticleDetailsPopup",
+    "docs": [
+      {
+        "description": "",
+        "methods": [
+          {
+            "name": "tabChange",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "i",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "handleActionClick",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "route",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "handleCancel",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "gotoUrl",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "url",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "renderChildArticles",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "childArticles",
+                "type": null
+              }
+            ],
+            "returns": null
+          }
+        ],
+        "props": {
+          "active": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "newsData": {
+            "type": {
+              "name": "object"
+            },
+            "required": true,
+            "description": ""
+          },
+          "onActionClick": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onCancel": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onChangeTab": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/Popups/ConfirmationDialog.js",
+    "name": "ConfirmationDialog",
+    "docs": [
+      {
+        "description": "",
+        "methods": [],
+        "props": {
+          "title": {
+            "type": {
+              "name": "string"
+            },
+            "required": true,
+            "description": ""
+          },
+          "message": {
+            "type": {
+              "name": "string"
+            },
+            "required": true,
+            "description": ""
+          },
+          "active": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onAction": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "actionLabel": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onCancel": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/Popups/EntityList/EntityList.js",
+    "name": "EntityList",
+    "docs": [
+      {
+        "description": "",
+        "methods": [
+          {
+            "name": "handleCancel",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "handleSelect",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          }
+        ],
+        "props": {
+          "list": {
+            "type": {
+              "name": "array"
+            },
+            "required": false,
+            "description": ""
+          },
+          "entity": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "initialSelection": {
+            "type": {
+              "name": "array"
+            },
+            "required": false,
+            "description": ""
+          },
+          "favourites": {
+            "type": {
+              "name": "array"
+            },
+            "required": false,
+            "description": ""
+          },
+          "active": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onCancel": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onSelect": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/Popups/IconPicker/IconPicker.js",
+    "name": "IconPicker",
+    "docs": [
+      {
+        "description": "",
+        "methods": [],
+        "props": {
+          "iconName": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "iconColor": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "active": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onCancel": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onUpdated": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/Popups/NewsSharePopup.js",
+    "name": "NewsSharePopup",
+    "docs": [
+      {
+        "description": "",
+        "methods": [
+          {
+            "name": "handleCancel",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "handleSend",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          }
+        ],
+        "props": {
+          "active": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "initialValues": {
+            "type": {
+              "name": "shape",
+              "value": {
+                "to": {
+                  "name": "string",
+                  "required": false
+                },
+                "subject": {
+                  "name": "string",
+                  "required": false
+                },
+                "message": {
+                  "name": "string",
+                  "required": false
+                }
+              }
+            },
+            "required": false,
+            "description": ""
+          },
+          "errors": {
+            "type": {
+              "name": "shape",
+              "value": {
+                "to": {
+                  "name": "string",
+                  "required": false
+                },
+                "subject": {
+                  "name": "string",
+                  "required": false
+                },
+                "message": {
+                  "name": "string",
+                  "required": false
+                }
+              }
+            },
+            "required": false,
+            "description": ""
+          },
+          "news": {
+            "type": {
+              "name": "object"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onCancel": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onSend": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/ProcessingOverlay/ProcessingOverlay.js",
+    "name": "ProcessingOverlay",
+    "docs": [
+      {
+        "description": "",
+        "methods": [],
+        "props": {
+          "message": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/RuleListItem/RuleListItem.js",
+    "name": "RuleListItem",
+    "docs": [
+      {
+        "description": "",
+        "methods": [],
+        "props": {
+          "ruleId": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "ruleName": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "tags": {
+            "type": {
+              "name": "array"
+            },
+            "required": false,
+            "description": ""
+          },
+          "moreTags": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "icon": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "iconType": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onAction": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "hasActionMenu": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "showIncludes": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/SearchBox/SearchBox.js",
+    "name": "SearchBox",
+    "docs": [
+      {
+        "description": "",
+        "methods": [
+          {
+            "name": "handleChange",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "value",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "handleKeyDown",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "e",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "handleSubmit",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "handleClear",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          }
+        ],
+        "props": {
+          "initialSearchText": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "label": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onSubmitSearch": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "submitOnChange": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "className": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/SearchableSelectList/SearchableSelectList.js",
+    "name": "SearchableSelectList",
+    "docs": [
+      {
+        "description": "",
+        "methods": [
+          {
+            "name": "getSelection",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "getSelectionLength",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "validateSelection",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "multiSelect",
+                "type": null
+              },
+              {
+                "name": "selection",
+                "type": null
+              },
+              {
+                "name": "favourites",
+                "type": null
+              },
+              {
+                "name": "list",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "clearSelection",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "handleChange",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "value",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "handleSelection",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "id",
+                "type": null
+              },
+              {
+                "name": "selected",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "handleSelectAll",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "selectAll",
+                "type": null
+              },
+              {
+                "name": "list",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "handleClear",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "favouritesAllowed",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "filterList",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "list",
+                "type": null
+              },
+              {
+                "name": "search",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "allFavouritesSelected",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "findFirstIndex",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "list",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "rowRenderer",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "list",
+                "type": null
+              },
+              {
+                "name": "styles",
+                "type": null
+              },
+              {
+                "name": "search",
+                "type": null
+              },
+              {
+                "name": "{index, key, style}",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "renderSelectAll",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "styles",
+                "type": null
+              },
+              {
+                "name": "list",
+                "type": null
+              }
+            ],
+            "returns": null
+          }
+        ],
+        "props": {
+          "entityType": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "showIcon": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "list": {
+            "type": {
+              "name": "array"
+            },
+            "required": false,
+            "description": ""
+          },
+          "listHeight": {
+            "type": {
+              "name": "number"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "200",
+              "computed": false
+            }
+          },
+          "searchLabel": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "initialSelection": {
+            "type": {
+              "name": "union",
+              "value": [
+                {
+                  "name": "string"
+                },
+                {
+                  "name": "array"
+                }
+              ]
+            },
+            "required": false,
+            "description": ""
+          },
+          "onSelectionChanged": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "multiSelect": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "true",
+              "computed": false
+            }
+          },
+          "selectAll": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "true",
+              "computed": false
+            }
+          },
+          "sortFunction": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "sortByName",
+              "computed": true
+            }
+          },
+          "maxSelections": {
+            "type": {
+              "name": "number"
+            },
+            "required": false,
+            "description": ""
+          },
+          "error": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "loading": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "favourites": {
+            "type": {
+              "name": "array"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/Section/Section.js",
+    "name": "Section",
+    "docs": [
+      {
+        "description": "",
+        "methods": [],
+        "props": {
+          "title": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "info": {
+            "type": {
+              "name": "node"
+            },
+            "required": false,
+            "description": ""
+          },
+          "children": {
+            "type": {
+              "name": "node"
+            },
+            "required": false,
+            "description": ""
+          },
+          "type": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "loading": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "empty": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "emptyMsg": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onViewMoreClick": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/SelectedFilterDisplay/SelectedFilterDisplay.js",
+    "name": "SelectedFilterDisplay",
+    "docs": [
+      {
+        "description": "",
+        "methods": [
+          {
+            "name": "handleDeleteFilter",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "value",
+                "type": null
+              },
+              {
+                "name": "listName",
+                "type": null
+              }
+            ],
+            "returns": null
+          }
+        ],
+        "props": {
+          "queryParams": {
+            "type": {
+              "name": "object"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onDeleteFilter": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/SmartSearch/SmartSearch.js",
+    "name": "SmartSearch",
+    "docs": [
+      {
+        "description": "",
+        "methods": [
+          {
+            "name": "getValue",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "setFocus",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "calculateListHeight",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "suggestions",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "handleFocus",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "handleBlur",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "handleChange",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "value",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "handleDeleteSelection",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "value",
+                "type": null
+              },
+              {
+                "name": "listName",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "changeActiveIndex",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "value",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "clearSearch",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "handleKeyDown",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "e",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "handleSubmit",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "submitSearch",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "{id, name, listName}",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "findMatchesInList",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "entityType",
+                "type": null
+              },
+              {
+                "name": "listName",
+                "type": null
+              },
+              {
+                "name": "search",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "findSuggestions",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "search",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "sortByMatch",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "lowerCaseSearch",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "listLookup",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "entityType",
+                "type": null
+              },
+              {
+                "name": "idList",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "toggleEntityPicker",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "listUpdated",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "entity",
+                "type": null
+              },
+              {
+                "name": "list",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "suggestionsMouseDown",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "suggestionsMouseUp",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "renderSelections",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "renderSuggestion",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "list",
+                "type": null
+              },
+              {
+                "name": "styles",
+                "type": null
+              },
+              {
+                "name": "search",
+                "type": null
+              },
+              {
+                "name": "{index, key, style}",
+                "type": null
+              }
+            ],
+            "returns": null
+          }
+        ],
+        "props": {
+          "lists": {
+            "type": {
+              "name": "object"
+            },
+            "required": false,
+            "description": ""
+          },
+          "entitiesToSearch": {
+            "type": {
+              "name": "array"
+            },
+            "required": false,
+            "description": ""
+          },
+          "entitiesToSearchParents": {
+            "type": {
+              "name": "array"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "[entityTypes.ACCOUNT]",
+              "computed": false
+            }
+          },
+          "allowUnmatched": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "true",
+              "computed": false
+            }
+          },
+          "unmatchedMessage": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "'No match found'",
+              "computed": false
+            }
+          },
+          "unmatchedLabel": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "'Search for'",
+              "computed": false
+            }
+          },
+          "onSearchSubmitted": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "overrideSubmit": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "searchLabel": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "'Search'",
+              "computed": false
+            }
+          },
+          "floatingLabel": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "true",
+              "computed": false
+            }
+          },
+          "selections": {
+            "type": {
+              "name": "object"
+            },
+            "required": false,
+            "description": ""
+          },
+          "showSelections": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "true",
+              "computed": false
+            }
+          },
+          "onDeleteSelection": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onChange": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "hint": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "showSearchButton": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": "",
+            "defaultValue": {
+              "value": "true",
+              "computed": false
+            }
+          },
+          "className": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "selectList": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "selectListChange": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "suggestionsHeight": {
+            "type": {
+              "name": "number"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/Table/Table.js",
+    "name": "Table",
+    "docs": [
+      {
+        "description": "",
+        "methods": [],
+        "props": {
+          "model": {
+            "type": {
+              "name": "object"
+            },
+            "required": true,
+            "description": ""
+          },
+          "data": {
+            "type": {
+              "name": "array"
+            },
+            "required": true,
+            "description": ""
+          },
+          "selectable": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "heading": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/TimePicker/TimePicker.js",
+    "name": "TimePicker",
+    "docs": [
+      {
+        "description": "",
+        "methods": [
+          {
+            "name": "dropdownTemplate",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "item",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "handleChange",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "type",
+                "type": null
+              },
+              {
+                "name": "ref",
+                "type": null
+              },
+              {
+                "name": "value",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "rowRenderer",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "day",
+                "type": null
+              },
+              {
+                "name": "styles",
+                "type": null
+              },
+              {
+                "name": "intervals",
+                "type": null
+              }
+            ],
+            "returns": null
+          }
+        ],
+        "props": {
+          "title": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "instruction": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onChanged": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "timezones": {
+            "type": {
+              "name": "object"
+            },
+            "required": false,
+            "description": ""
+          },
+          "form": {
+            "type": {
+              "name": "object"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/ToolTip/ToolTip.js",
+    "name": "ToolTip",
+    "docs": [
+      {
+        "description": "",
+        "methods": [],
+        "props": {
+          "label": {
+            "type": {
+              "name": "string"
+            },
+            "required": true,
+            "description": ""
+          },
+          "left": {
+            "type": {
+              "name": "number"
+            },
+            "required": true,
+            "description": ""
+          },
+          "top": {
+            "type": {
+              "name": "number"
+            },
+            "required": true,
+            "description": ""
+          },
+          "display": {
+            "type": {
+              "name": "bool"
+            },
+            "required": true,
+            "description": ""
+          },
+          "additionalStyles": {
+            "type": {
+              "name": "object"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/TourLauncher/TourLauncher.js",
+    "name": "TourLauncher",
+    "docs": [
+      {
+        "description": "",
+        "methods": [],
+        "props": {
+          "location": {
+            "type": {
+              "name": "object"
+            },
+            "required": false,
+            "description": ""
+          },
+          "mediaQuery": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onClick": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/Trends/TrendsItem.js",
+    "name": "TrendsItem",
+    "docs": [
+      {
+        "description": "",
+        "methods": [],
+        "props": {
+          "entityType": {
+            "type": {
+              "name": "string"
+            },
+            "required": true,
+            "description": ""
+          },
+          "id": {
+            "type": {
+              "name": "string"
+            },
+            "required": true,
+            "description": ""
+          },
+          "name": {
+            "type": {
+              "name": "string"
+            },
+            "required": true,
+            "description": ""
+          },
+          "score": {
+            "type": {
+              "name": "number"
+            },
+            "required": true,
+            "description": ""
+          },
+          "iconImage": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "hasActionMenu": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "actionMenuData": {
+            "type": {
+              "name": "array"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onMenuSelected": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onTrendClicked": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/Trends/TrendsList.js",
+    "name": "TrendsList",
+    "docs": [
+      {
+        "description": "",
+        "methods": [],
+        "props": {
+          "trends": {
+            "type": {
+              "name": "arrayOf",
+              "value": {
+                "name": "shape",
+                "value": {
+                  "id": {
+                    "name": "string",
+                    "required": false
+                  },
+                  "name": {
+                    "name": "string",
+                    "required": false
+                  },
+                  "score": {
+                    "name": "number",
+                    "required": false
+                  },
+                  "entityType": {
+                    "name": "string",
+                    "required": false
+                  },
+                  "iconImage": {
+                    "name": "string",
+                    "required": false
+                  }
+                }
+              }
+            },
+            "required": false,
+            "description": ""
+          },
+          "maxTrends": {
+            "type": {
+              "name": "number"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onTrendClicked": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "actionMenuData": {
+            "type": {
+              "name": "array"
+            },
+            "required": false,
+            "description": ""
+          },
+          "onMenuSelected": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "hasActionMenu": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          },
+          "wrap": {
+            "type": {
+              "name": "bool"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/TrendsStat/TrendsStat.js",
+    "name": "TrendsStat",
+    "docs": [
+      {
+        "description": "",
+        "methods": [],
+        "props": {
+          "value": {
+            "type": {
+              "name": "string"
+            },
+            "required": true,
+            "description": ""
+          },
+          "title": {
+            "type": {
+              "name": "string"
+            },
+            "required": true,
+            "description": ""
+          },
+          "subtitle": {
+            "type": {
+              "name": "string"
+            },
+            "required": true,
+            "description": ""
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "src/components/VirtualScrollingPage/VirtualScrollingPage.js",
+    "name": "VirtualScrollingPage",
+    "docs": [
+      {
+        "description": "",
+        "methods": [
+          {
+            "name": "getRowHeight",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "width",
+                "type": null
+              },
+              {
+                "name": "index",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "rowRenderer",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "{index, key, style}",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "isRowLoaded",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "{ index }",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "loadMoreRows",
+            "docblock": null,
+            "modifiers": [],
+            "params": [
+              {
+                "name": "{ startIndex, stopIndex }",
+                "type": null
+              }
+            ],
+            "returns": null
+          },
+          {
+            "name": "resize",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          },
+          {
+            "name": "updatePosition",
+            "docblock": null,
+            "modifiers": [],
+            "params": [],
+            "returns": null
+          }
+        ],
+        "props": {
+          "list": {
+            "type": {
+              "name": "array"
+            },
+            "required": true,
+            "description": ""
+          },
+          "itemComponent": {
+            "type": {
+              "name": "func"
+            },
+            "required": true,
+            "description": ""
+          },
+          "getRowHeight": {
+            "type": {
+              "name": "func"
+            },
+            "required": true,
+            "description": ""
+          },
+          "onLoadMore": {
+            "type": {
+              "name": "func"
+            },
+            "required": false,
+            "description": ""
+          },
+          "totalItems": {
+            "type": {
+              "name": "number"
+            },
+            "required": false,
+            "description": ""
+          },
+          "batchSize": {
+            "type": {
+              "name": "number"
+            },
+            "required": false,
+            "description": ""
+          },
+          "threshold": {
+            "type": {
+              "name": "number"
+            },
+            "required": false,
+            "description": ""
+          },
+          "mediaQuery": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          },
+          "additionalReturnParam": {
+            "type": {
+              "name": "string"
+            },
+            "required": false,
+            "description": ""
+          }
+        }
+      }
+    ]
   }
-}
+]

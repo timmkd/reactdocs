@@ -6,3 +6,15 @@
 		clear:both;
 	}
 }
+
+*[data-expanded='true']{
+	display:block;
+}
+
+*[data-expanded='false']{
+	display:none;
+}
+
+.comp .panel-heading {
+	cursor:pointer;
+}
