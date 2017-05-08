@@ -37,7 +37,7 @@ export class Comp extends Component {
           <div>
             <h3>Methods</h3>
             {methodKeys.map(key => (
-              <Method method={this.methods[key]} key={key}/>
+              <Method method={this.methods[key]} key={key} name={this.methods[key].name}/>
             ))}
           </div>
         );
@@ -54,7 +54,7 @@ export class Comp extends Component {
   }
 
   handleClickHeader() {
-    this.toggleComponent();
+    this.props.toggleComponent(this.props.id);
   }
 
   render() {
@@ -63,7 +63,7 @@ export class Comp extends Component {
         <div className="panel-heading" onClick={this.handleClickHeader}>
           <h2 className="panel-title">{this.props.comp.name}</h2>
         </div>
-        <div className="panel-body" data-expanded={this.state.expanded}>
+        <div className="panel-body" data-expanded={this.props.expanded}>
           <p className="panel-title">{this.props.comp.path}</p>
           {this.getProperties()}
           {this.getMethods()}
@@ -75,5 +75,8 @@ export class Comp extends Component {
 }
 
 Comp.propTypes = {
-  comp: React.PropTypes.object.isRequired
+  comp: React.PropTypes.object.isRequired,
+  id: React.PropTypes.number.isRequired,
+  expanded: React.PropTypes.string.isRequired,
+  toggleComponent: React.PropTypes.func.isRequired
 };
