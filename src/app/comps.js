@@ -12,6 +12,7 @@ export class Comps extends Component {
             id={i}
             comp={comp}
             expanded={comp.expanded}
+            show={comp.show}
             toggleComponent={this.props.toggleComponent}
             />
           ))}

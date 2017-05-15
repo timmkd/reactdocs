@@ -11,10 +11,12 @@ export class Docs extends Component {
       comps: [],
       filter: ''
     };
+
     this.hideComponent = this.hideComponent.bind(this);
     this.showComponent = this.showComponent.bind(this);
     this.toggleComponent = this.toggleComponent.bind(this);
     this.updateFilterText = this.updateFilterText.bind(this);
+    this.filterText = this.filterText.bind(this);
   }
 
   componentDidMount() {
@@ -27,6 +29,7 @@ export class Docs extends Component {
           const comp = response.data[i];
           comp.key = i;
           comp.expanded = 'false';
+          comp.show = 'true';
           comps.push(comp);
           return true;
         });
@@ -36,11 +39,23 @@ export class Docs extends Component {
 
   hideComponent(index) {
     const comps = this.state.comps;
-    comps[index].expanded = 'false';
+    comps[index].show = 'false';
     this.setState({comps});
   }
 
   showComponent(index) {
+    const comps = this.state.comps;
+    comps[index].show = 'true';
+    this.setState({comps});
+  }
+
+  expandComponent(index) {
+    const comps = this.state.comps;
+    comps[index].expanded = 'false';
+    this.setState({comps});
+  }
+
+  contractComponent(index) {
     const comps = this.state.comps;
     comps[index].expanded = 'true';
     this.setState({comps});
@@ -48,27 +63,24 @@ export class Docs extends Component {
 
   toggleComponent(index) {
     const comps = this.state.comps;
-    console.log(comps[index].expanded === true);
     comps[index].expanded = comps[index].expanded === 'true' ? 'false' : 'true';
     this.setState({comps});
-    console.log(index);
-    console.log(this.state.comps[index]);
   }
 
   updateFilterText(text) {
-    const rows = [];
-
-    this.setState({filter: text});
-
     this.state.comps.map(comp => {
-      comp.expanded = 'false';
-      if (comp.name.toLowerCase().indexOf(text.toLowerCase()) !== -1) {
-        console.log('match');
-        comp.expanded = 'true';
+      if (comp.name.toLowerCase().indexOf(text.toLowerCase()) !== -1 && comp.hidden !== 'true') {
+        comp.show = 'true';
+      } else if (comp.show === 'true') {
+        comp.show = 'false';
       }
-      rows.push(comp);
       return true;
     });
+  }
+
+  filterText(text) {
+    this.setState({filter: text});
+    this.updateFilterText(text);
   }
 
   render() {
@@ -80,7 +92,7 @@ export class Docs extends Component {
         <SearchBar
           comps={this.state.comps}
           filterText={this.state.filter}
-          updateFilterText={this.updateFilterText}
+          updateFilterText={this.filterText}
           />
         <Comps
           comps={this.state.comps}

@@ -15,6 +15,26 @@
 	display:none;
 }
 
+*[data-show='false']{
+	display:none;
+}
+
 .comp .panel-heading {
 	cursor:pointer;
+}
+
+.searchbar-wrapper {
+	position:absolute;
+	top:20px;
+	right:15px;
+	width:50%;
+}
+
+.container {
+	position:relative;
+}
+
+h1 {
+	margin-bottom:30px;
+	font-size:41px;
 }

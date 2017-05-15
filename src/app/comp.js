@@ -59,7 +59,7 @@ export class Comp extends Component {
 
   render() {
     return (
-      <li className="comp panel panel-default">
+      <li className="comp panel panel-default" data-show={this.props.show}>
         <div className="panel-heading" onClick={this.handleClickHeader}>
           <h2 className="panel-title">{this.props.comp.name}</h2>
         </div>
@@ -78,5 +78,6 @@ Comp.propTypes = {
   comp: React.PropTypes.object.isRequired,
   id: React.PropTypes.number.isRequired,
   expanded: React.PropTypes.string.isRequired,
+  show: React.PropTypes.string,
   toggleComponent: React.PropTypes.func.isRequired
 };
