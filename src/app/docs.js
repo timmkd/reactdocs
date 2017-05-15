@@ -24,7 +24,6 @@ export class Docs extends Component {
       .get('app/docs.json')
       .then(response => {
         const comps = [];
-
         Object.keys(response.data).map(i => {
           const comp = response.data[i];
           comp.key = i;
@@ -32,6 +31,11 @@ export class Docs extends Component {
           comp.show = 'true';
           comps.push(comp);
           return true;
+        });
+        comps.sort((a, b) => {
+          const textA = a.name.toUpperCase();
+          const textB = b.name.toUpperCase();
+          return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
         });
         this.setState({comps});
       });
