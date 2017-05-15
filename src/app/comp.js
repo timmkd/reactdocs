@@ -64,10 +64,10 @@ export class Comp extends Component {
           <h2 className="panel-title">{this.props.comp.name}</h2>
         </div>
         <div className="panel-body" data-expanded={this.props.expanded}>
-          <p className="panel-title">{this.props.comp.path}</p>
+          <p className="comp--path">{this.props.comp.path}</p>
           {this.getProperties()}
           {this.getMethods()}
-          <pre>{JSON.stringify(this.props.comp, null, '\t')}</pre>
+          {/* <pre>{JSON.stringify(this.props.comp, null, '\t')}</pre> */}
         </div>
       </li>
     );

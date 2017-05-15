@@ -1,0 +1,8 @@
+.method {
+	font-weight:bold;
+
+	&--params {
+		font-family: $font-family-monospace;
+		font-weight: normal;
+	}
+}

@@ -1,0 +1,18 @@
+.comp {
+	&--path {
+		font-size:$font-size-small;
+		color:$gray;
+	}
+
+	*[data-expanded='true']{
+		display:block;
+	}
+
+	*[data-expanded='false']{
+		display:none;
+	}
+
+	&[data-show='false']{
+		display:none;
+	}
+}

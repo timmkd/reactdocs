@@ -1,0 +1,15 @@
+.prop {
+
+	&--name {
+		font-weight:bold;
+	}
+
+	&--type {
+		font-size: $font-size-base;
+		font-family: $font-family-monospace;
+	}
+
+	&--required {
+		font-family: $font-family-monospace;
+	}
+}

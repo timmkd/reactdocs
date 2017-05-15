@@ -4,6 +4,12 @@ import {Param} from './param';
 
 export class Method extends Component {
 
+  constructor(props) {
+    super(props);
+    this.getParams = this.getParams.bind(this);
+    this.paramsList = this.paramsList.bind(this);
+  }
+
   getParams() {
     if (this.props.method.params) {
       return (
@@ -18,26 +24,35 @@ export class Method extends Component {
 
   paramsList() {
     if (this.props.method.params) {
-      return (
-        <span>
-          {Object.keys(this.props.method.params).map(key => (
-            {key}
-          ))}
-        </span>
-      );
+      const params = this.props.method.params;
+      const keys = Object.keys(params);
+      let paramsList = '';
+
+      keys.map((key, i) => {
+        paramsList += params[key].name;
+
+        if (keys.length !== i + 1) {
+          paramsList += ', ';
+        }
+        return true;
+      });
+
+      return paramsList;
     }
   }
 
   render() {
     return (
       <div>
-        <h4>{this.props.method.name}( )</h4>
-        <h5>Params</h5>
+        <p className="method">
+          {this.props.method.name}( <span className="method--params">{this.paramsList()}</span> )
+        </p>
+        {/* <h5>Params</h5>
         {this.getParams()}
         <dl className="dl-props">
           <dt>Returns</dt>
           <dd>{this.props.method.returns ? this.props.method.returns.toString() : 'null'}</dd>
-        </dl>
+        </dl> */}
       </div>
     );
   }

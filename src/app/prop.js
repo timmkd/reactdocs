@@ -2,20 +2,33 @@ import React, {Component} from 'react';
 
 export class Prop extends Component {
 
+  constructor(props) {
+    super(props);
+    this.getDescription = this.getDescription.bind(this);
+    this.getRequired = this.getRequired.bind(this);
+  }
+
+  getDescription() {
+    if (this.props.prop.description) {
+      return (<p>{this.props.prop.description}</p>);
+    }
+  }
+
+  getRequired() {
+    if (this.props.prop.required) {
+      return (<span className="text-danger">required</span>);
+    }
+  }
+
   render() {
     return (
       <div>
-        <h4>{this.props.name}</h4>
-        <dl className="dl-props">
-          <dt>Type</dt>
-          <dd>{this.props.prop.type.name}</dd>
-
-          <dt>Required</dt>
-          <dd>{this.props.prop.required.toString()}</dd>
-
-          <dt>Description</dt>
-          <dd>{this.props.prop.description}</dd>
-        </dl>
+        <p>
+          <span className="prop--name">{this.props.name}</span>
+          <span className="prop--type"> {this.props.prop.type.name}</span>
+          <span className="prop--required"> {this.getRequired()}</span>
+        </p>
+        {this.getDescription()}
       </div>
     );
   }
