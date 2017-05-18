@@ -10,6 +10,7 @@ export class Comp extends Component {
     this.handleClickHeader = this.handleClickHeader.bind(this);
     this.properties = this.props.comp.docs.length ? this.props.comp.docs[0].props : null;
     this.methods = this.props.comp.docs.length ? this.props.comp.docs[0].methods : null;
+    this.description = this.props.comp.docs.length ? this.props.comp.docs[0].description : null;
 
     this.state = {
       expanded: 'false'
@@ -45,6 +46,10 @@ export class Comp extends Component {
     }
   }
 
+  getDescription() {
+    return (<p className="comp--description">{this.description}</p>);
+  }
+
   toggleComponent() {
     if (this.state.expanded === 'true') {
       this.setState({expanded: 'false'});
@@ -65,6 +70,7 @@ export class Comp extends Component {
         </div>
         <div className="panel-body" data-expanded={this.props.expanded}>
           <p className="comp--path">{this.props.comp.path}</p>
+          <p className="comp--description">{this.description}</p>
           {this.getProperties()}
           {this.getMethods()}
           {/* <pre>{JSON.stringify(this.props.comp, null, '\t')}</pre> */}

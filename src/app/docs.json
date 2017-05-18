@@ -85,28 +85,28 @@
               "name": "array"
             },
             "required": false,
-            "description": ""
+            "description": "array of tab objects to be loaded into the component"
           },
           "iconMenuItems": {
             "type": {
               "name": "array"
             },
             "required": false,
-            "description": ""
+            "description": "array of tab objects to be loaded into the component"
           },
           "onMenuSelected": {
             "type": {
               "name": "func"
             },
             "required": false,
-            "description": ""
+            "description": "the function to call when Jump to option is clicked"
           },
           "position": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "Menu position ex: topLeft, topRight"
           }
         }
       }
@@ -360,21 +360,21 @@
               "name": "object"
             },
             "required": true,
-            "description": ""
+            "description": "the account details"
           },
           "mediaQuery": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "the current media Query"
           },
           "onEnterAccount": {
             "type": {
               "name": "func"
             },
             "required": false,
-            "description": ""
+            "description": "function to call when an account is selected"
           }
         }
       }
@@ -406,35 +406,35 @@
               "name": "object"
             },
             "required": true,
-            "description": ""
+            "description": "alert details"
           },
           "onEnter": {
             "type": {
               "name": "func"
             },
             "required": false,
-            "description": ""
+            "description": "the function to call when a alert is selected"
           },
           "onSelected": {
             "type": {
               "name": "func"
             },
             "required": false,
-            "description": ""
+            "description": "the function to call when a specific alert preview is selected"
           },
           "actions": {
             "type": {
               "name": "array"
             },
             "required": false,
-            "description": ""
+            "description": "the array of additional actions"
           },
           "mediaQuery": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "the current media Query"
           }
         }
       }
@@ -453,21 +453,21 @@
               "name": "object"
             },
             "required": true,
-            "description": ""
+            "description": "the exec details"
           },
           "mediaQuery": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "the current media Query"
           },
           "onEnterExec": {
             "type": {
               "name": "func"
             },
             "required": false,
-            "description": ""
+            "description": "function to call when an exec is selected"
           }
         }
       }
@@ -486,21 +486,21 @@
               "name": "object"
             },
             "required": true,
-            "description": ""
+            "description": "the sector details"
           },
           "mediaQuery": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "the current media Query"
           },
           "onEnterSector": {
             "type": {
               "name": "func"
             },
             "required": false,
-            "description": ""
+            "description": "the function to call when an sector is selected"
           }
         }
       }
@@ -536,21 +536,21 @@
               "name": "object"
             },
             "required": true,
-            "description": ""
+            "description": "the smart filter details"
           },
           "mediaQuery": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "the current media Query"
           },
           "onEnterSmartFilter": {
             "type": {
               "name": "func"
             },
             "required": false,
-            "description": ""
+            "description": "the function to call when a smart filter is selected"
           }
         }
       }
@@ -774,7 +774,7 @@
               "name": "node"
             },
             "required": false,
-            "description": ""
+            "description": "contents"
           },
           "position": {
             "type": {
@@ -791,21 +791,21 @@
               }
             },
             "required": false,
-            "description": ""
+            "description": "the position for the popup, in px"
           },
           "active": {
             "type": {
               "name": "bool"
             },
             "required": false,
-            "description": ""
+            "description": "value to determine if the popup is currently visible"
           },
           "className": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "Used to assign custom styles based on context"
           }
         }
       }
@@ -820,27 +820,45 @@
         "methods": [
           {
             "name": "onClick",
-            "docblock": null,
+            "docblock": "This is the description for the onclick function\n\n@param {object} data This is an object\n@param {array} barIndex This is probablt an integer\n@param {number} seriesIndex This is a param with a description too long to fit in\n    one line.\n@param {object} position This is the description for the obect\n@return {bool} There is actually no boolean returned but this is being included\n    purposes of showing the syntax",
             "modifiers": [],
             "params": [
               {
                 "name": "data",
-                "type": null
+                "description": "This is an object",
+                "type": {
+                  "name": "object"
+                }
               },
               {
                 "name": "seriesIndex",
-                "type": null
+                "description": "This is a param with a description too long to fit in\n    one line.",
+                "type": {
+                  "name": "number"
+                }
               },
               {
                 "name": "barIndex",
-                "type": null
+                "description": "This is probablt an integer",
+                "type": {
+                  "name": "array"
+                }
               },
               {
                 "name": "position",
-                "type": null
+                "description": "This is the description for the obect",
+                "type": {
+                  "name": "object"
+                }
               }
             ],
-            "returns": null
+            "returns": {
+              "description": "There is actually no boolean returned but this is being included\n    purposes of showing the syntax",
+              "type": {
+                "name": "bool"
+              }
+            },
+            "description": "This is the description for the onclick function"
           },
           {
             "name": "onClear",
@@ -1708,28 +1726,28 @@
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "the value of the current selection"
           },
           "defaultValue": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "the value to select"
           },
           "className": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "the className for the dropdown"
           },
           "label": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "the drop down label"
           },
           "listItems": {
             "type": {
@@ -1749,28 +1767,28 @@
               }
             },
             "required": false,
-            "description": ""
+            "description": "Object of key/values or array representing all items suggested"
           },
           "allowBlank": {
             "type": {
               "name": "bool"
             },
             "required": false,
-            "description": ""
+            "description": "If false the dropdown will preselect the first item if the supplied value matches none of the options' values."
           },
           "onChange": {
             "type": {
               "name": "func"
             },
             "required": false,
-            "description": ""
+            "description": "the function to call when the list value changes"
           },
           "error": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "the error to display"
           }
         }
       }
@@ -2144,35 +2162,35 @@
               "name": "string"
             },
             "required": true,
-            "description": ""
+            "description": "the string value used to specify the FA-Icon"
           },
           "onClick": {
             "type": {
               "name": "func"
             },
             "required": true,
-            "description": ""
+            "description": "the function to call on the click event"
           },
           "disabled": {
             "type": {
               "name": "bool"
             },
             "required": false,
-            "description": ""
+            "description": "the icon to be used in th avatar"
           },
           "className": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "ClassName for position or styling being passed"
           },
           "menuOptions": {
             "type": {
               "name": "array"
             },
             "required": false,
-            "description": ""
+            "description": "Optional list of popout menu options"
           }
         }
       }
@@ -2342,42 +2360,42 @@
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "the string image URL to be used in the avatar, takes precedence"
           },
           "icon": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "the icon to be used in th avatar"
           },
           "iconColor": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "the background color of the avatar"
           },
           "title": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "the main title of the list item"
           },
           "subtitle": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "the subtitle of the list item"
           },
           "onClick": {
             "type": {
               "name": "func"
             },
             "required": false,
-            "description": ""
+            "description": "the function to call on the click event"
           }
         }
       }
@@ -2693,21 +2711,21 @@
               "name": "array"
             },
             "required": false,
-            "description": ""
+            "description": "array of tab objects to be loaded into the component"
           },
           "tabIndex": {
             "type": {
               "name": "number"
             },
             "required": false,
-            "description": ""
+            "description": "index of the current tab, overrides default of 0"
           },
           "onChange": {
             "type": {
               "name": "func"
             },
             "required": false,
-            "description": ""
+            "description": "the function to call when the tab value changes"
           }
         }
       }
@@ -2944,35 +2962,35 @@
               "name": "number"
             },
             "required": false,
-            "description": ""
+            "description": "value that specifies the upper limit of items to display"
           },
           "news": {
             "type": {
               "name": "object"
             },
             "required": false,
-            "description": ""
+            "description": "news item object containing articles, count and images"
           },
           "showDescription": {
             "type": {
               "name": "bool"
             },
             "required": false,
-            "description": ""
+            "description": "boolean value that specifies whether or not the item description is visible"
           },
           "showChildArticles": {
             "type": {
               "name": "bool"
             },
             "required": false,
-            "description": ""
+            "description": "boolean value that specifies whether or not to show child articles for tweets"
           },
           "onViewMoreClicked": {
             "type": {
               "name": "func"
             },
             "required": false,
-            "description": ""
+            "description": "callback when View more button is cliecked"
           }
         }
       }
@@ -2991,84 +3009,84 @@
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "id value to be used within component"
           },
           "title": {
             "type": {
               "name": "node"
             },
             "required": false,
-            "description": ""
+            "description": "value of title to be used within the component"
           },
           "subtitle": {
             "type": {
               "name": "node"
             },
             "required": false,
-            "description": ""
+            "description": "value of subtitle to be used within the component"
           },
           "imageUrl": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "URL of image to be used in component"
           },
           "iconName": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "name of icon to be used in FAIcon component"
           },
           "iconColor": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "background color to be used in FAIcon component"
           },
           "execTwitterUrl": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "url string value for exec twitter"
           },
           "execLinkedinUrl": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "url string value for exec linkedin"
           },
           "type": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "entityType"
           },
           "hideJumpTo": {
             "type": {
               "name": "bool"
             },
             "required": false,
-            "description": ""
+            "description": "boolean that specifies whether the JumpTo should be hidden"
           },
           "hideAction": {
             "type": {
               "name": "bool"
             },
             "required": false,
-            "description": ""
+            "description": "boolean that specifies whether the ActionMenu should be hidden"
           },
           "hideFavourite": {
             "type": {
               "name": "bool"
             },
             "required": false,
-            "description": ""
+            "description": "boolean that specifies whether the FavouriteToggle should be hidden"
           },
           "actions": {
             "type": {
@@ -3083,14 +3101,14 @@
               ]
             },
             "required": false,
-            "description": ""
+            "description": "array of action objects to be loaded into the ActionMenucomponent"
           },
           "onActionMenuClicked": {
             "type": {
               "name": "func"
             },
             "required": false,
-            "description": ""
+            "description": "the function to call when the ActionMenu component changes"
           }
         }
       }
@@ -3109,14 +3127,14 @@
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "the text to split into paragraphs"
           },
           "className": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "the className for the containing div"
           }
         }
       }
@@ -3311,7 +3329,7 @@
               "name": "object"
             },
             "required": true,
-            "description": ""
+            "description": "the newsData details"
           },
           "onActionClick": {
             "type": {
@@ -3351,42 +3369,42 @@
               "name": "string"
             },
             "required": true,
-            "description": ""
+            "description": "string value for dialog title"
           },
           "message": {
             "type": {
               "name": "string"
             },
             "required": true,
-            "description": ""
+            "description": "string value for the dialog message"
           },
           "active": {
             "type": {
               "name": "bool"
             },
             "required": false,
-            "description": ""
+            "description": "boolean value that specifies whether the popup is visible"
           },
           "onAction": {
             "type": {
               "name": "func"
             },
             "required": false,
-            "description": ""
+            "description": "onAction function call when confirmed"
           },
           "actionLabel": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "string value for confirmation button"
           },
           "onCancel": {
             "type": {
               "name": "func"
             },
             "required": false,
-            "description": ""
+            "description": "specifies the action to take on esc or Cancel"
           }
         }
       }
@@ -3427,42 +3445,42 @@
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "string to identify which entity to display"
           },
           "initialSelection": {
             "type": {
               "name": "array"
             },
             "required": false,
-            "description": ""
+            "description": "array of selected ids"
           },
           "favourites": {
             "type": {
               "name": "array"
             },
             "required": false,
-            "description": ""
+            "description": "favourites"
           },
           "active": {
             "type": {
               "name": "bool"
             },
             "required": false,
-            "description": ""
+            "description": "boolean value that specifies whether the popup is visible"
           },
           "onCancel": {
             "type": {
               "name": "func"
             },
             "required": false,
-            "description": ""
+            "description": "specifies the action to take on external clicks and Cancel"
           },
           "onSelect": {
             "type": {
               "name": "func"
             },
             "required": false,
-            "description": ""
+            "description": "onUpdated function call to register icon with API"
           }
         }
       }
@@ -3481,35 +3499,35 @@
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "string class value for the FA icon"
           },
           "iconColor": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "string hex value for the icon background color"
           },
           "active": {
             "type": {
               "name": "bool"
             },
             "required": false,
-            "description": ""
+            "description": "boolean value that specifies whether the popup is visible"
           },
           "onCancel": {
             "type": {
               "name": "func"
             },
             "required": false,
-            "description": ""
+            "description": "specifies the action to take on external clicks and Cancel"
           },
           "onUpdated": {
             "type": {
               "name": "func"
             },
             "required": false,
-            "description": ""
+            "description": "onUpdated function call to register icon with API"
           }
         }
       }
@@ -3625,7 +3643,7 @@
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "the message to display"
           }
         }
       }
@@ -3644,63 +3662,63 @@
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "the id of the rule item"
           },
           "ruleName": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "the name of the ruleItem"
           },
           "tags": {
             "type": {
               "name": "array"
             },
             "required": false,
-            "description": ""
+            "description": "Tags"
           },
           "moreTags": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "more Tags text"
           },
           "icon": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "Rule icon"
           },
           "iconType": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "type of icon ex. material-icons if empty FA icon is going to be rendered"
           },
           "onAction": {
             "type": {
               "name": "func"
             },
             "required": false,
-            "description": ""
+            "description": "the function to call when an action is clicked"
           },
           "hasActionMenu": {
             "type": {
               "name": "bool"
             },
             "required": false,
-            "description": ""
+            "description": "Show action menu"
           },
           "showIncludes": {
             "type": {
               "name": "bool"
             },
             "required": false,
-            "description": ""
+            "description": "show the 'includes' messgage (defaults to true)"
           }
         }
       }
@@ -3765,28 +3783,28 @@
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "the search box label"
           },
           "onSubmitSearch": {
             "type": {
               "name": "func"
             },
             "required": false,
-            "description": ""
+            "description": "the function to call when a search is submitted"
           },
           "submitOnChange": {
             "type": {
               "name": "bool"
             },
             "required": false,
-            "description": ""
+            "description": "call submit when search value changes"
           },
           "className": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "additional class name to add"
           }
         }
       }
@@ -3984,28 +4002,28 @@
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "entity type for the list"
           },
           "showIcon": {
             "type": {
               "name": "bool"
             },
             "required": false,
-            "description": ""
+            "description": "should an icon be displayed in the list"
           },
           "list": {
             "type": {
               "name": "array"
             },
             "required": false,
-            "description": ""
+            "description": "the list of data to display and search"
           },
           "listHeight": {
             "type": {
               "name": "number"
             },
             "required": false,
-            "description": "",
+            "description": "height of the scrolling list section",
             "defaultValue": {
               "value": "200",
               "computed": false
@@ -4016,7 +4034,7 @@
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "the hint to display in the search box"
           },
           "initialSelection": {
             "type": {
@@ -4031,21 +4049,21 @@
               ]
             },
             "required": false,
-            "description": ""
+            "description": "the initial selections in the list"
           },
           "onSelectionChanged": {
             "type": {
               "name": "func"
             },
             "required": false,
-            "description": ""
+            "description": "function to call when a selection changes"
           },
           "multiSelect": {
             "type": {
               "name": "bool"
             },
             "required": false,
-            "description": "",
+            "description": "allow multiple selections",
             "defaultValue": {
               "value": "true",
               "computed": false
@@ -4056,7 +4074,7 @@
               "name": "bool"
             },
             "required": false,
-            "description": "",
+            "description": "include a select all option (only valid when multiSelect: true)",
             "defaultValue": {
               "value": "true",
               "computed": false
@@ -4067,7 +4085,7 @@
               "name": "func"
             },
             "required": false,
-            "description": "",
+            "description": "the sort function to use (will default to sortByName)",
             "defaultValue": {
               "value": "sortByName",
               "computed": true
@@ -4078,28 +4096,28 @@
               "name": "number"
             },
             "required": false,
-            "description": ""
+            "description": "number of allowed values"
           },
           "error": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "error message"
           },
           "loading": {
             "type": {
               "name": "bool"
             },
             "required": false,
-            "description": ""
+            "description": "show a loading indicator when loading is true"
           },
           "favourites": {
             "type": {
               "name": "array"
             },
             "required": false,
-            "description": ""
+            "description": "favourite ids (if present a favourite option will be shown at the top of the list)"
           }
         }
       }
@@ -4118,56 +4136,56 @@
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "section title to display"
           },
           "info": {
             "type": {
               "name": "node"
             },
             "required": false,
-            "description": ""
+            "description": "additional info"
           },
           "children": {
             "type": {
               "name": "node"
             },
             "required": false,
-            "description": ""
+            "description": "child components in the section"
           },
           "type": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "specifies style of section"
           },
           "loading": {
             "type": {
               "name": "bool"
             },
             "required": false,
-            "description": ""
+            "description": "specify if section is loading"
           },
           "empty": {
             "type": {
               "name": "bool"
             },
             "required": false,
-            "description": ""
+            "description": "specify if section content is empty"
           },
           "emptyMsg": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "message to display when section is empty"
           },
           "onViewMoreClick": {
             "type": {
               "name": "func"
             },
             "required": false,
-            "description": ""
+            "description": "If onViewMoreClick is being passed show View More button at bottom right"
           }
         }
       }
@@ -4476,21 +4494,21 @@
               "name": "object"
             },
             "required": false,
-            "description": ""
+            "description": "the lists object passed in from redux state"
           },
           "entitiesToSearch": {
             "type": {
               "name": "array"
             },
             "required": false,
-            "description": ""
+            "description": "array of entityTypes to search (if this is omitted all types will be searched)"
           },
           "entitiesToSearchParents": {
             "type": {
               "name": "array"
             },
             "required": false,
-            "description": "",
+            "description": "optionally search for parent entities",
             "defaultValue": {
               "value": "[entityTypes.ACCOUNT]",
               "computed": false
@@ -4501,7 +4519,7 @@
               "name": "bool"
             },
             "required": false,
-            "description": "",
+            "description": "if allowed unmatched results will return with an undefined listName",
             "defaultValue": {
               "value": "true",
               "computed": false
@@ -4512,7 +4530,7 @@
               "name": "string"
             },
             "required": false,
-            "description": "",
+            "description": "applies to allowUnmatched false only - error message to display if match isn't found",
             "defaultValue": {
               "value": "'No match found'",
               "computed": false
@@ -4523,7 +4541,7 @@
               "name": "string"
             },
             "required": false,
-            "description": "",
+            "description": "applies to allowUnmatched true only - Label next to the unmatched option in the list (default is 'Search for')",
             "defaultValue": {
               "value": "'Search for'",
               "computed": false
@@ -4534,21 +4552,21 @@
               "name": "func"
             },
             "required": false,
-            "description": ""
+            "description": "the function to call when search submitted"
           },
           "overrideSubmit": {
             "type": {
               "name": "func"
             },
             "required": false,
-            "description": ""
+            "description": "the function to call when on manual submit"
           },
           "searchLabel": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": "",
+            "description": "label for search box",
             "defaultValue": {
               "value": "'Search'",
               "computed": false
@@ -4559,7 +4577,7 @@
               "name": "bool"
             },
             "required": false,
-            "description": "",
+            "description": "should the label float above while editing",
             "defaultValue": {
               "value": "true",
               "computed": false
@@ -4570,14 +4588,14 @@
               "name": "object"
             },
             "required": false,
-            "description": ""
+            "description": "the currently selected items (to exclude from suggestions)"
           },
           "showSelections": {
             "type": {
               "name": "bool"
             },
             "required": false,
-            "description": "",
+            "description": "show the current selections within the smart search as chips",
             "defaultValue": {
               "value": "true",
               "computed": false
@@ -4588,28 +4606,28 @@
               "name": "func"
             },
             "required": false,
-            "description": ""
+            "description": "the function to call when a chip is deleted"
           },
           "onChange": {
             "type": {
               "name": "func"
             },
             "required": false,
-            "description": ""
+            "description": "the function to call when there is a change"
           },
           "hint": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "hint of search input"
           },
           "showSearchButton": {
             "type": {
               "name": "bool"
             },
             "required": false,
-            "description": "",
+            "description": "default showSearchButton is true if false is passed no button is going to be displayed",
             "defaultValue": {
               "value": "true",
               "computed": false
@@ -4620,28 +4638,28 @@
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "additional styling class"
           },
           "selectList": {
             "type": {
               "name": "bool"
             },
             "required": false,
-            "description": ""
+            "description": "option to include selectable list popout menu"
           },
           "selectListChange": {
             "type": {
               "name": "func"
             },
             "required": false,
-            "description": ""
+            "description": "the function to call when there is a select list change"
           },
           "suggestionsHeight": {
             "type": {
               "name": "number"
             },
             "required": false,
-            "description": ""
+            "description": "static height of the suggestions list"
           }
         }
       }
@@ -4753,35 +4771,35 @@
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "title to be used alongside time picker"
           },
           "instruction": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "description of selections purpose"
           },
           "onChanged": {
             "type": {
               "name": "func"
             },
             "required": false,
-            "description": ""
+            "description": "function to call when a selection changes"
           },
           "timezones": {
             "type": {
               "name": "object"
             },
             "required": false,
-            "description": ""
+            "description": "function to call when a selection changes"
           },
           "form": {
             "type": {
               "name": "object"
             },
             "required": false,
-            "description": ""
+            "description": "alert form containing schedule"
           }
         }
       }
@@ -4800,35 +4818,35 @@
               "name": "string"
             },
             "required": true,
-            "description": ""
+            "description": "value of the text to display"
           },
           "left": {
             "type": {
               "name": "number"
             },
             "required": true,
-            "description": ""
+            "description": "left attribute for tooltip, in px"
           },
           "top": {
             "type": {
               "name": "number"
             },
             "required": true,
-            "description": ""
+            "description": "top attribute for tooltip, in px"
           },
           "display": {
             "type": {
               "name": "bool"
             },
             "required": true,
-            "description": ""
+            "description": "value to deteremine if the tooltip is currently visible"
           },
           "additionalStyles": {
             "type": {
               "name": "object"
             },
             "required": false,
-            "description": ""
+            "description": "Used to assign custom styles based on context"
           }
         }
       }
@@ -4847,21 +4865,21 @@
               "name": "object"
             },
             "required": false,
-            "description": ""
+            "description": "the current location"
           },
           "mediaQuery": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "the current media query"
           },
           "onClick": {
             "type": {
               "name": "func"
             },
             "required": false,
-            "description": ""
+            "description": "callback function when tour launcher clicked"
           }
         }
       }
@@ -5141,7 +5159,7 @@
               "name": "array"
             },
             "required": true,
-            "description": ""
+            "description": "the list prop should be an array of objects containing all the props required for the itemComponent id is the only required prop"
           },
           "itemComponent": {
             "type": {
@@ -5190,14 +5208,14 @@
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "the current media Query"
           },
           "additionalReturnParam": {
             "type": {
               "name": "string"
             },
             "required": false,
-            "description": ""
+            "description": "additional object key to return in the loadMore function (id is always returned)"
           }
         }
       }

@@ -1,24 +1,15 @@
 @import 'sass/bootstrap';
 
-@import 'sass/helpers';
+@import 'sass/fontello';
+@import 'sass/mixins';
+@import 'sass/header';
 @import 'sass/comp';
 @import 'sass/prop';
 @import 'sass/method';
+@import 'sass/param';
 
-*[data-expanded='true']{
-	display:block;
-}
-
-*[data-expanded='false']{
-	display:none;
-}
-
-*[data-show='false']{
-	display:none;
-}
-
-.comp .panel-heading {
-	cursor:pointer;
+body{
+	padding-top:100px;
 }
 
 .searchbar-wrapper {

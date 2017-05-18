@@ -1,0 +1,15 @@
+@mixin required(){
+	font-family: $font-family-monospace;
+	color: $brand-danger
+}
+
+@mixin type() {
+	font-size: $font-size-base;
+	font-family: $font-family-monospace;
+	font-weight:normal;
+}
+
+@mixin description() {
+	color: $gray-light;
+	margin-top:-8px;
+}

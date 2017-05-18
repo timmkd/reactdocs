@@ -1,0 +1,12 @@
+.param {
+
+	&--name {
+		font-weight:bold;
+	}
+	&--description {
+		@include description();
+	}
+	&--type {
+		@include type();
+	}
+}

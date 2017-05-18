@@ -10,13 +10,13 @@ export class Prop extends Component {
 
   getDescription() {
     if (this.props.prop.description) {
-      return (<p>{this.props.prop.description}</p>);
+      return (<p className="prop--description">{this.props.prop.description}</p>);
     }
   }
 
   getRequired() {
     if (this.props.prop.required) {
-      return (<span className="text-danger">required</span>);
+      return (<span className="prop--required"> required</span>);
     }
   }
 
@@ -26,7 +26,7 @@ export class Prop extends Component {
         <p>
           <span className="prop--name">{this.props.name}</span>
           <span className="prop--type"> {this.props.prop.type.name}</span>
-          <span className="prop--required"> {this.getRequired()}</span>
+          {this.getRequired()}
         </p>
         {this.getDescription()}
       </div>

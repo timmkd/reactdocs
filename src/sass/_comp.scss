@@ -15,4 +15,8 @@
 	&[data-show='false']{
 		display:none;
 	}
+
+	.panel-heading {
+		cursor:pointer;
+	}
 }

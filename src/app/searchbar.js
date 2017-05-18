@@ -16,10 +16,10 @@ export class SearchBar extends Component {
   render() {
     return (
       <form className="searchbar-wrapper input-group input-group-lg">
-        <span className="input-group-addon" id="sizing-addon1"><span className="glyphicon glyphicon-search" aria-hidden="true"/></span>
+        <span className="input-group-addon" id="sizing-addon1"><span className="icon-search" aria-hidden="true"/></span>
         <input
           className="searchbar form-control"
-          placeholder="Filter jobs by keyword..."
+          placeholder="Filter components by keyword..."
           // value={this.state.filterText}
           onChange={this.handleChange}
           ref={input => {

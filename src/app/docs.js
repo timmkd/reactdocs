@@ -89,21 +89,27 @@ export class Docs extends Component {
 
   render() {
     return (
-      <div className="container">
-        <h1>
-          Documentation
-        </h1>
-        <SearchBar
-          comps={this.state.comps}
-          filterText={this.state.filter}
-          updateFilterText={this.filterText}
-          />
-        <Comps
-          comps={this.state.comps}
-          hideComponent={this.hideComponent}
-          showComponent={this.showComponent}
-          toggleComponent={this.toggleComponent}
-          />
+      <div>
+        <div className="header">
+          <div className="container">
+            <h1>
+              Documentation
+            </h1>
+            <SearchBar
+              comps={this.state.comps}
+              filterText={this.state.filter}
+              updateFilterText={this.filterText}
+              />
+          </div>
+        </div>
+        <div className="container">
+          <Comps
+            comps={this.state.comps}
+            hideComponent={this.hideComponent}
+            showComponent={this.showComponent}
+            toggleComponent={this.toggleComponent}
+            />
+        </div>
       </div>
     );
   }

@@ -1,8 +1,21 @@
 .method {
-	font-weight:bold;
+	&--name {
+		font-weight:bold;
+	}
 
 	&--params {
-		font-family: $font-family-monospace;
-		font-weight: normal;
+		margin-top:20px;
+	}
+
+	&--params-list {
+		@include type();
+	}
+
+	&--description {
+		@include description();
+	}
+
+	&--returns {
+		margin-top: 30px;
 	}
 }

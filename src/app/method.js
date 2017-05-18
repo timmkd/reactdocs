@@ -8,16 +8,35 @@ export class Method extends Component {
     super(props);
     this.getParams = this.getParams.bind(this);
     this.paramsList = this.paramsList.bind(this);
+    this.getDocBlock = this.getDocBlock.bind(this);
   }
 
   getParams() {
     if (this.props.method.params) {
       return (
-        <ul>
-          {Object.keys(this.props.method.params).map(key => (
-            <Param param={this.props.method.params[key]} name={key} key={key}/>
-          ))}
-        </ul>
+        <div className="method--params">
+          <ul className="list-unstyled">
+            {this.props.method.params.map((param, i) => (
+              <Param key={i} param={param}/>
+            ))}
+          </ul>
+        </div>
+      );
+    }
+  }
+  getReturns() {
+    let type = null;
+
+    if (this.props.method.returns) {
+      if (this.props.method.returns.type) {
+        type = (<span className="param--type"> {this.props.method.returns.type.name}</span>);
+      }
+
+      return (
+        <div className="method--returns">
+          <h5>Returns {type}</h5>
+          <p className="method--description">{this.props.method.returns.description}</p>
+        </div>
       );
     }
   }
@@ -41,18 +60,23 @@ export class Method extends Component {
     }
   }
 
+  getDocBlock() {
+    if (this.props.method.docblock) {
+      return (<pre>{this.props.method.docblock}</pre>);
+    }
+  }
+
   render() {
     return (
-      <div>
-        <p className="method">
-          {this.props.method.name}( <span className="method--params">{this.paramsList()}</span> )
-        </p>
-        {/* <h5>Params</h5>
-        {this.getParams()}
-        <dl className="dl-props">
-          <dt>Returns</dt>
-          <dd>{this.props.method.returns ? this.props.method.returns.toString() : 'null'}</dd>
-        </dl> */}
+      <div className="panel panel-default">
+        <div className="panel-footer">
+          <p className="h4 method--name">
+            {this.props.method.name}  ( <span className="method--params-list">{this.paramsList()}</span> )
+          </p>
+          <p className="method--description">{this.props.method.description}</p>
+          {this.getParams()}
+          {this.getReturns()}
+        </div>
       </div>
     );
   }

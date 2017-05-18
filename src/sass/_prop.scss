@@ -5,11 +5,14 @@
 	}
 
 	&--type {
-		font-size: $font-size-base;
-		font-family: $font-family-monospace;
+		@include type();
 	}
 
 	&--required {
-		font-family: $font-family-monospace;
+		@include required();
+	}
+
+	&--description {
+		@include description();
 	}
 }
