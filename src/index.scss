@@ -7,16 +7,10 @@
 @import 'sass/prop';
 @import 'sass/method';
 @import 'sass/param';
+@import 'sass/helpbox';
 
 body{
 	padding-top:100px;
-}
-
-.searchbar-wrapper {
-	position:absolute;
-	top:20px;
-	right:15px;
-	width:50%;
 }
 
 .container {

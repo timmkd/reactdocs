@@ -1,0 +1,33 @@
+.helpbox {
+	display:block;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	overflow:visible;
+	background:rgba(255,255,255,.8);
+
+	div[data-overlay='show'] & {
+		display: block;
+	}
+
+	div[data-overlay='hide'] & {
+		display: none;
+	}
+
+	pre{
+		overflow: scroll;
+
+		.hljs {
+			background:transparent;
+		}
+	}
+
+	.modal-content {
+		width:90vh;
+		height:auto;
+		top:50%;
+		left:50%;
+		transform:translateX(-50%) translateY(-50%);
+	}
+}

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Comps} from './comps';
 import {SearchBar} from './searchbar';
+import {HelpBox} from './helpbox';
 
 import axios from 'axios';
 
@@ -9,7 +10,8 @@ export class Docs extends Component {
     super();
     this.state = {
       comps: [],
-      filter: ''
+      filter: '',
+      overlay: 'hide'
     };
 
     this.hideComponent = this.hideComponent.bind(this);
@@ -17,6 +19,9 @@ export class Docs extends Component {
     this.toggleComponent = this.toggleComponent.bind(this);
     this.updateFilterText = this.updateFilterText.bind(this);
     this.filterText = this.filterText.bind(this);
+    this.handleClickHelp = this.handleClickHelp.bind(this);
+    this.hideOverlay = this.hideOverlay.bind(this);
+    this.showOverlay = this.showOverlay.bind(this);
   }
 
   componentDidMount() {
@@ -87,29 +92,45 @@ export class Docs extends Component {
     this.updateFilterText(text);
   }
 
+  showOverlay() {
+    this.setState({overlay: 'show'});
+  }
+
+  hideOverlay() {
+    this.setState({overlay: 'hide'});
+  }
+
+  handleClickHelp() {
+    this.showOverlay();
+  }
+
   render() {
     return (
-      <div>
-        <div className="header">
+      <div data-overlay={this.state.overlay}>
+        <main>
+          <div className="header">
+            <div className="container">
+              <h1>
+                Documentation
+              </h1>
+              <span className="icon-help" onClick={this.handleClickHelp}/>
+              <SearchBar
+                comps={this.state.comps}
+                filterText={this.state.filter}
+                updateFilterText={this.filterText}
+                />
+            </div>
+          </div>
           <div className="container">
-            <h1>
-              Documentation
-            </h1>
-            <SearchBar
+            <Comps
               comps={this.state.comps}
-              filterText={this.state.filter}
-              updateFilterText={this.filterText}
+              hideComponent={this.hideComponent}
+              showComponent={this.showComponent}
+              toggleComponent={this.toggleComponent}
               />
           </div>
-        </div>
-        <div className="container">
-          <Comps
-            comps={this.state.comps}
-            hideComponent={this.hideComponent}
-            showComponent={this.showComponent}
-            toggleComponent={this.toggleComponent}
-            />
-        </div>
+        </main>
+        <HelpBox hideOverlay={this.hideOverlay}/>
       </div>
     );
   }

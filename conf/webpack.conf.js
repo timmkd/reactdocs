@@ -14,13 +14,13 @@ module.exports = {
         loaders: [
           'json-loader'
         ]
-      },
+      }, /*
       {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'eslint-loader',
         enforce: 'pre'
-      },
+      }, */
       {
         test: /\.(css|scss)$/,
         loaders: [
@@ -37,6 +37,15 @@ module.exports = {
           'react-hot-loader',
           'babel-loader'
         ]
+      },
+      {
+        test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
+        loader: 'url-loader',
+        options: {
+          limit: 50000,
+          mimetype: 'application/font-woff',
+          name: '.fonts/[name].[ext]'
+        }
       }
     ]
   },
