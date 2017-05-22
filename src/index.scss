@@ -1,4 +1,5 @@
-@import 'sass/bootstrap';
+$bootstrap-sass-asset-helper: true;
+@import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 
 @import 'sass/fontello';
 @import 'sass/mixins';
